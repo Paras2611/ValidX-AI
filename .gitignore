@@ -20,6 +20,11 @@ data/vault/*
 data/reports/*
 !data/reports/.gitkeep
 data/validx_database.json.tmp
+backend/data/vault/*
+!backend/data/vault/.gitkeep
+backend/data/reports/*
+!backend/data/reports/.gitkeep
+backend/data/validx_database.json.tmp
 
 # Logs
 logs
