@@ -1,0 +1,25 @@
+{
+  "name": "validx-ai",
+  "version": "1.0.0",
+  "description": "VALIDATEX - AI-Powered Application & Document Verification System (SIH26261 / AICTE)",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test": "npm --prefix backend test",
+    "seed": "npm --prefix backend run seed"
+  },
+  "keywords": [
+    "document-verification",
+    "ocr",
+    "ai",
+    "compliance",
+    "audit",
+    "sih26261",
+    "aicte"
+  ],
+  "author": "VALIDATEX Team",
+  "license": "ISC"
+}

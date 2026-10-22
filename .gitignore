@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# Local Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Vault runtime data (preserve directory with .gitkeep)
+data/vault/*
+!data/vault/.gitkeep
+data/reports/*
+!data/reports/.gitkeep
+data/validx_database.json.tmp
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
