@@ -31,48 +31,48 @@ export const LandingPage: React.FC = () => {
   return (
     <div className="flex-1 bg-slate-50">
       {/* Top Banner */}
-      <div className="bg-slate-900 text-slate-300 py-2.5 px-4 text-xs font-medium text-center border-b border-slate-800">
-        <span className="inline-flex items-center gap-1.5 font-semibold text-indigo-400">
-          <Award className="w-3.5 h-3.5" /> SIH26261 Smart Automation Challenge
+      <div className="bg-slate-900 text-slate-300 py-2 px-3 text-[11px] sm:text-xs font-medium text-center border-b border-slate-800 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+        <span className="inline-flex items-center gap-1 font-semibold text-indigo-400">
+          <Award className="w-3.5 h-3.5" /> SIH26261 AICTE Challenge
         </span>
-        <span className="mx-2 text-slate-600">|</span>
-        <span>AICTE Institutional Application & Document Verification System</span>
-        <span className="mx-2 text-slate-600">|</span>
-        <span className="text-emerald-400 font-semibold">Production Ready MVP</span>
+        <span className="hidden sm:inline text-slate-600">|</span>
+        <span className="hidden sm:inline">Institutional Verification System</span>
+        <span className="hidden sm:inline text-slate-600">|</span>
+        <span className="text-emerald-400 font-semibold">&bull; Production Ready</span>
       </div>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-200 bg-white">
+      <section className="relative overflow-hidden pt-8 pb-16 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-28 border-b border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="mb-6 flex justify-center">
+            <div className="mb-5 sm:mb-6 flex justify-center">
               <div className="p-1.5 bg-white rounded-2xl shadow-lg shadow-indigo-100 border border-slate-200/90 inline-flex items-center justify-center">
-                <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-16 sm:h-20 w-auto object-contain rounded-xl" />
+                <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-14 sm:h-20 w-auto object-contain rounded-xl" />
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold mb-6">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-[11px] sm:text-xs font-semibold mb-4 sm:mb-6">
               <Zap className="w-3.5 h-3.5 text-indigo-600" />
               <span>Validate Smarter. Verify Faster. Trust Better.</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
               AI-Powered Institutional <br />
               <span className="text-indigo-600">Document Verification</span>
             </h1>
 
-            <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-lg lg:text-xl text-slate-600 leading-relaxed px-1">
               VALIDATEX centralizes multi-format document ingestion, real OCR extraction,
               deterministic cross-validation, versioned statutory compliance checks, and advisory
               AI explanations into a secure three-panel review workspace.
             </p>
 
             {/* Quick 1-Click Interactive Demo Selector */}
-            <div className="mt-10 p-6 bg-slate-50 rounded-2xl border border-slate-200/80 shadow-xs">
+            <div className="mt-8 sm:mt-10 p-3.5 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200/80 shadow-xs">
               <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 text-center">
                 Instant 1-Click Demonstration Personas (Select Any Role)
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-2.5">
                 <button
                   onClick={() => handleDemoLogin('applicant')}
                   className="flex flex-col items-center p-3 rounded-xl bg-white border border-slate-200 hover:border-emerald-500 hover:shadow-md transition group text-left"

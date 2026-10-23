@@ -48,6 +48,7 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
 
   const [newComment, setNewComment] = useState<string>('');
   const [isInternalComment, setIsInternalComment] = useState<boolean>(true);
+  const [mobileActivePanel, setMobileActivePanel] = useState<'A' | 'B' | 'C'>('B');
 
   const fetchApplicationData = async () => {
     if (!id) return;
@@ -266,10 +267,51 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
         </div>
       </div>
 
+      {/* Mobile Panel Selector Bar (<lg screens) */}
+      <div className="lg:hidden bg-slate-100 border-b border-slate-200 px-3 py-2 flex items-center justify-between gap-1 text-xs shrink-0">
+        <button
+          onClick={() => setMobileActivePanel('A')}
+          className={`flex-1 py-1.5 px-2 rounded-lg font-bold text-center transition ${
+            mobileActivePanel === 'A'
+              ? 'bg-slate-900 text-white shadow-xs'
+              : 'text-slate-600 hover:bg-slate-200'
+          }`}
+        >
+          A: Parameters
+        </button>
+        <button
+          onClick={() => setMobileActivePanel('B')}
+          className={`flex-1 py-1.5 px-2 rounded-lg font-bold text-center transition ${
+            mobileActivePanel === 'B'
+              ? 'bg-slate-900 text-white shadow-xs'
+              : 'text-slate-600 hover:bg-slate-200'
+          }`}
+        >
+          B: Document ({documents?.length || 0})
+        </button>
+        <button
+          onClick={() => setMobileActivePanel('C')}
+          className={`flex-1 py-1.5 px-2 rounded-lg font-bold text-center transition flex items-center justify-center gap-1 ${
+            mobileActivePanel === 'C'
+              ? 'bg-slate-900 text-white shadow-xs'
+              : 'text-slate-600 hover:bg-slate-200'
+          }`}
+        >
+          <span>C: Audit & AI</span>
+          {discrepancies?.filter((d: any) => d.status === 'open').length > 0 && (
+            <span className="px-1.5 py-0.2 bg-rose-500 text-white rounded-full text-[9px] font-bold">
+              {discrepancies.filter((d: any) => d.status === 'open').length}
+            </span>
+          )}
+        </button>
+      </div>
+
       {/* The PRD Section 12 Three-Panel Workspace Grid */}
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden">
         {/* PANEL A: Application Parameters, Declared Data & Notes (Col 1 to 3) */}
-        <div className="lg:col-span-3 bg-white border-r border-slate-200 p-5 overflow-y-auto max-h-[calc(100vh-130px)]">
+        <div className={`lg:col-span-3 bg-white border-r border-slate-200 p-5 overflow-y-auto max-h-[calc(100vh-160px)] lg:max-h-[calc(100vh-130px)] ${
+          mobileActivePanel === 'A' ? 'block' : 'hidden lg:block'
+        }`}>
           <div className="pb-3 border-b border-slate-100">
             <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">
               Panel A
@@ -365,7 +407,9 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
         </div>
 
         {/* PANEL B: Evidence & Document Inspector (Col 4 to 8) */}
-        <div className="lg:col-span-5 bg-slate-50 border-r border-slate-200 flex flex-col max-h-[calc(100vh-130px)] overflow-hidden">
+        <div className={`lg:col-span-5 bg-slate-50 border-r border-slate-200 flex-col max-h-[calc(100vh-160px)] lg:max-h-[calc(100vh-130px)] overflow-hidden ${
+          mobileActivePanel === 'B' ? 'flex' : 'hidden lg:flex'
+        }`}>
           {/* Document Tabs */}
           <div className="bg-white border-b border-slate-200 p-2.5 flex items-center gap-1 overflow-x-auto">
             {documents?.map((doc: any) => (
@@ -481,7 +525,9 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
         </div>
 
         {/* PANEL C: Audit Outcomes, Discrepancies & AI Advisor (Col 9 to 12) */}
-        <div className="lg:col-span-4 bg-white p-5 overflow-y-auto max-h-[calc(100vh-130px)] space-y-6">
+        <div className={`lg:col-span-4 bg-white p-5 overflow-y-auto max-h-[calc(100vh-160px)] lg:max-h-[calc(100vh-130px)] space-y-6 ${
+          mobileActivePanel === 'C' ? 'block' : 'hidden lg:block'
+        }`}>
           <div className="pb-3 border-b border-slate-100">
             <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">
               Panel C

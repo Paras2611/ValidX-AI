@@ -38,3 +38,9 @@ yarn-error.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# Confidential PRD Documents (Never commit or push to GitHub)
+*PRD*.md
+*prd*.md
+VALIDATEX_PRD.md
+VALIDATEX_Antigravity_PRD.md

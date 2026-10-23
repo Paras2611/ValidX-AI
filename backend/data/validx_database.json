@@ -91,14 +91,14 @@
       "updated_at": "2026-10-23T20:44:00.942Z"
     },
     {
-      "id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "email": "principal_1792788884382@rit.edu",
-      "password_hash": "$2b$10$7.58mCubLsezfwdZCKT0MuCodHeQw2YjEb1VR/2iq6ABhwwDevD2K",
+      "id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "email": "principal_1792790180491@rit.edu",
+      "password_hash": "$2b$10$mjrLZk1oYjSX29Q9.kDsDO0DYyPVeEK38XUzrUsfsLGQHTrliH21a",
       "full_name": "Dr. Ramesh Patil (Principal RIT)",
       "role": "applicant",
       "organization_id": "b0fcaba0-5a30-4749-803a-5a3680585ed2",
-      "created_at": "2026-10-23T20:54:44.551Z",
-      "updated_at": "2026-10-23T20:54:44.551Z"
+      "created_at": "2026-10-23T21:16:20.662Z",
+      "updated_at": "2026-10-23T21:16:20.662Z"
     }
   ],
   "organizations": [
@@ -2053,8 +2053,8 @@
       "priority_reason": "5 high-severity issue(s) detected: university_affiliation_noc, fire_safety_cert, land_building_affidavit, ter_fee_receipt, anti_ragging_undertaking"
     },
     {
-      "id": "006152f8-ead6-453e-adea-732ce3b01ec2",
-      "reference_no": "VX-2026-3436",
+      "id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+      "reference_no": "VX-2026-9234",
       "applicant_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "organization_id": "b0fcaba0-5a30-4749-803a-5a3680585ed2",
       "application_type_id": "984fcc68-7380-4fd6-a42d-441377c018d7",
@@ -2075,7 +2075,7 @@
         "ai_analysis": {
           "executive_summary": "Verification audit flagged 2 issue(s) and 1 failed rule(s) requiring human reviewer intervention.",
           "observed_facts": [
-            "Application ID VX-2026-3436 submitted with 3 extracted document fields.",
+            "Application ID VX-2026-9234 submitted with 3 extracted document fields.",
             "5 deterministic verification checks evaluated.",
             "8 statutory compliance rules tested.",
             "2 discrepancy signal(s) flagged during cross-validation."
@@ -2115,22 +2115,22 @@
           "model_info": {
             "provider": "VALIDATEX Rule-Assisted Heuristic Engine",
             "model_version": "v2.6-Deterministic-Grounding",
-            "timestamp": "2026-10-23T20:54:42.282Z",
+            "timestamp": "2026-10-23T21:16:18.253Z",
             "is_fallback": false
           }
         },
-        "verified_at": "2026-10-23T20:54:42.282Z"
+        "verified_at": "2026-10-23T21:16:18.253Z"
       },
-      "created_at": "2026-10-23T20:54:39.679Z",
-      "updated_at": "2026-10-23T20:54:43.232Z",
-      "submitted_at": "2026-10-23T20:54:42.017Z",
+      "created_at": "2026-10-23T21:16:16.270Z",
+      "updated_at": "2026-10-23T21:16:19.194Z",
+      "submitted_at": "2026-10-23T21:16:17.808Z",
       "priority_reason": "2 high-severity issue(s) detected: income_certificate, degree_marksheet",
       "assigned_officer_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4"
     },
     {
-      "id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
-      "reference_no": "VX-2026-9300",
-      "applicant_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
+      "reference_no": "VX-2026-2209",
+      "applicant_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "organization_id": "b0fcaba0-5a30-4749-803a-5a3680585ed2",
       "application_type_id": "7a369895-1786-4e69-b3c7-b4c146ba0d82",
       "title": "Rajarambapu Institute of Technology - AICTE EoA 2026-27",
@@ -2151,7 +2151,7 @@
         "ai_analysis": {
           "executive_summary": "Verification audit flagged 6 issue(s) and 1 failed rule(s) requiring human reviewer intervention.",
           "observed_facts": [
-            "Application ID VX-2026-9300 submitted with 1 extracted document fields.",
+            "Application ID VX-2026-2209 submitted with 1 extracted document fields.",
             "7 deterministic verification checks evaluated.",
             "8 statutory compliance rules tested.",
             "6 discrepancy signal(s) flagged during cross-validation."
@@ -2215,21 +2215,21 @@
           "model_info": {
             "provider": "VALIDATEX Rule-Assisted Heuristic Engine",
             "model_version": "v2.6-Deterministic-Grounding",
-            "timestamp": "2026-10-23T20:54:45.110Z",
+            "timestamp": "2026-10-23T21:16:21.152Z",
             "is_fallback": false
           }
         },
-        "verified_at": "2026-10-23T20:54:45.110Z"
+        "verified_at": "2026-10-23T21:16:21.152Z"
       },
-      "created_at": "2026-10-23T20:54:44.577Z",
-      "updated_at": "2026-10-23T20:54:47.625Z",
-      "submitted_at": "2026-10-23T20:54:44.798Z",
+      "created_at": "2026-10-23T21:16:20.698Z",
+      "updated_at": "2026-10-23T21:16:23.756Z",
+      "submitted_at": "2026-10-23T21:16:20.802Z",
       "priority_reason": "6 high-severity issue(s) detected: state_govt_noc, university_affiliation_noc, fire_safety_cert, land_building_affidavit, ter_fee_receipt, anti_ragging_undertaking"
     },
     {
-      "id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "reference_no": "VX-2026-4117",
-      "applicant_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "reference_no": "VX-2026-2812",
+      "applicant_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "organization_id": "b0fcaba0-5a30-4749-803a-5a3680585ed2",
       "application_type_id": "7a369895-1786-4e69-b3c7-b4c146ba0d82",
       "title": "Duplicate Document Hash Audit Test",
@@ -2243,7 +2243,7 @@
         "ai_analysis": {
           "executive_summary": "Verification audit flagged 6 issue(s) and 1 failed rule(s) requiring human reviewer intervention.",
           "observed_facts": [
-            "Application ID VX-2026-4117 submitted with 0 extracted document fields.",
+            "Application ID VX-2026-2812 submitted with 0 extracted document fields.",
             "10 deterministic verification checks evaluated.",
             "8 statutory compliance rules tested.",
             "6 discrepancy signal(s) flagged during cross-validation."
@@ -2307,15 +2307,15 @@
           "model_info": {
             "provider": "VALIDATEX Rule-Assisted Heuristic Engine",
             "model_version": "v2.6-Deterministic-Grounding",
-            "timestamp": "2026-10-23T20:54:46.623Z",
+            "timestamp": "2026-10-23T21:16:22.730Z",
             "is_fallback": false
           }
         },
-        "verified_at": "2026-10-23T20:54:46.623Z"
+        "verified_at": "2026-10-23T21:16:22.731Z"
       },
-      "created_at": "2026-10-23T20:54:46.107Z",
-      "updated_at": "2026-10-23T20:54:46.623Z",
-      "submitted_at": "2026-10-23T20:54:46.227Z",
+      "created_at": "2026-10-23T21:16:22.173Z",
+      "updated_at": "2026-10-23T21:16:22.731Z",
+      "submitted_at": "2026-10-23T21:16:22.294Z",
       "priority_reason": "5 high-severity issue(s) detected: university_affiliation_noc, fire_safety_cert, land_building_affidavit, ter_fee_receipt, anti_ragging_undertaking"
     }
   ],
@@ -2801,109 +2801,109 @@
       "updated_at": "2026-10-23T20:44:03.814Z"
     },
     {
-      "id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "document_type": "id_proof",
       "original_filename": "national_id_card.pdf",
-      "storage_key": "de75d1dd-e740-4df3-a55e-b53cef2e823d.pdf",
+      "storage_key": "c5279a4f-fdd5-4028-b04a-d7879eef7a01.pdf",
       "mime_type": "application/pdf",
       "file_size": 507,
       "sha256_hash": "e6203ca9945b045a5b0f9158f30af8b3f84234eda7c99f0ecb3835bb461243f9",
       "status": "verified",
       "page_count": 1,
       "uploader_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
-      "created_at": "2026-10-23T20:54:39.798Z",
-      "updated_at": "2026-10-23T20:54:41.915Z"
+      "created_at": "2026-10-23T21:16:16.509Z",
+      "updated_at": "2026-10-23T21:16:17.669Z"
     },
     {
-      "id": "01b6491d-e12b-4ae7-9b9e-77dcf16ade13",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "59a6d291-a66d-46e0-8ae1-78e99a573957",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "document_type": "aicte_previous_eoa",
       "original_filename": "aicte_previous_eoa.pdf",
-      "storage_key": "1b9fb200-1a25-4bed-aea8-010d741a78f4.pdf",
+      "storage_key": "43a730ff-6a3f-43b1-bc3a-d58249220f98.pdf",
       "mime_type": "application/pdf",
       "file_size": 575,
       "sha256_hash": "a4ffff03ac41c05601000e8187ddf6712f267a5579572b757d7caf6145d72cc7",
       "status": "verified",
       "page_count": 1,
-      "uploader_id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "created_at": "2026-10-23T20:54:44.605Z",
-      "updated_at": "2026-10-23T20:54:44.755Z"
+      "uploader_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "created_at": "2026-10-23T21:16:20.728Z",
+      "updated_at": "2026-10-23T21:16:20.756Z"
     },
     {
-      "id": "c4f238f1-57c8-44f1-a0e7-8b69b35ff1b8",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "a39ad1d3-05f0-4100-b2ad-96757295b940",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "document_type": "fire_safety_cert",
       "original_filename": "expired_fire_clearance.pdf",
-      "storage_key": "4e1ec6fb-6738-43c9-95d4-71cee96fe257.pdf",
+      "storage_key": "1cca48b2-67eb-410e-ad8c-847724ee62b0.pdf",
       "mime_type": "application/pdf",
       "file_size": 517,
       "sha256_hash": "ca7b576bfc424863cb8c90b9e74930d2a3249e46ad3a4487f9fbf11ed09241bb",
       "status": "verified",
       "page_count": 1,
-      "uploader_id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "created_at": "2026-10-23T20:54:45.971Z",
-      "updated_at": "2026-10-23T20:54:46.002Z"
+      "uploader_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "created_at": "2026-10-23T21:16:22.024Z",
+      "updated_at": "2026-10-23T21:16:22.050Z"
     },
     {
-      "id": "d73b049f-7d51-49a9-97bc-c0ef48c1c88e",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "18279558-bfc9-4916-bdca-a86a0c5ad1f7",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "document_type": "land_building_affidavit",
       "original_filename": "land_affidavit_mismatched.pdf",
-      "storage_key": "9228b190-af63-4881-9375-c8c567b5e7bc.pdf",
+      "storage_key": "b8f41052-5bfc-4b6a-bfad-1529547081f8.pdf",
       "mime_type": "application/pdf",
       "file_size": 497,
       "sha256_hash": "93677391a34ff2ba9311ec145d4d8b82ee303955dda0b5a52487cc5071c608ea",
       "status": "verified",
       "page_count": 1,
-      "uploader_id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "created_at": "2026-10-23T20:54:46.043Z",
-      "updated_at": "2026-10-23T20:54:46.059Z"
+      "uploader_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "created_at": "2026-10-23T21:16:22.105Z",
+      "updated_at": "2026-10-23T21:16:22.121Z"
     },
     {
-      "id": "49bbb7ed-3e9a-41de-8dd7-e0c6705ecd5b",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "0a9972ef-f7bd-4ff2-b8e3-5e2e630b4829",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "document_type": "aicte_previous_eoa",
       "original_filename": "doc1.pdf",
-      "storage_key": "f4410307-8215-4e43-84f0-2ee7004e04a1.pdf",
+      "storage_key": "770a8410-cec9-41a1-9afa-ca9ab46f09f8.pdf",
       "mime_type": "application/pdf",
       "file_size": 499,
       "sha256_hash": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de",
       "status": "verified",
       "page_count": 1,
-      "uploader_id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "created_at": "2026-10-23T20:54:46.135Z",
-      "updated_at": "2026-10-23T20:54:46.275Z"
+      "uploader_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "created_at": "2026-10-23T21:16:22.202Z",
+      "updated_at": "2026-10-23T21:16:22.347Z"
     },
     {
-      "id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "document_type": "state_govt_noc",
       "original_filename": "doc2.pdf",
-      "storage_key": "fde3b765-9927-4280-9b44-b11c3ed0f40a.pdf",
+      "storage_key": "d4815052-f6a3-404f-a489-80e899332c73.pdf",
       "mime_type": "application/pdf",
       "file_size": 499,
       "sha256_hash": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de",
       "status": "verified",
       "page_count": 1,
-      "uploader_id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "created_at": "2026-10-23T20:54:46.182Z",
-      "updated_at": "2026-10-23T20:54:46.289Z"
+      "uploader_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "created_at": "2026-10-23T21:16:22.249Z",
+      "updated_at": "2026-10-23T21:16:22.361Z"
     },
     {
-      "id": "49e2a9db-5e18-4653-908f-06cdfea6b77f",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "302b9b16-631c-419c-8b9a-fe31e39c8ddb",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "document_type": "fire_safety_cert",
       "original_filename": "unreadable_scan.pdf",
-      "storage_key": "6eb39704-6432-46fb-a991-7254a25fd219.pdf",
+      "storage_key": "ae41566f-f67e-48ab-8cae-e7976d13038d.pdf",
       "mime_type": "application/pdf",
       "file_size": 415,
       "sha256_hash": "9e0240a7127a7db7f9c2f22641f15258de161f49a6229ad1a55118ae6f5f0acf",
       "status": "verified",
       "page_count": 1,
-      "uploader_id": "f182308e-536e-4735-9852-0f31f44e6910",
-      "created_at": "2026-10-23T20:54:47.482Z",
-      "updated_at": "2026-10-23T20:54:47.505Z"
+      "uploader_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
+      "created_at": "2026-10-23T21:16:23.593Z",
+      "updated_at": "2026-10-23T21:16:23.625Z"
     }
   ],
   "extracted_fields": [
@@ -3376,8 +3376,8 @@
       "created_at": "2026-10-23T20:44:02.308Z"
     },
     {
-      "id": "a3f2ec84-5fb6-440e-b720-a861dedd8ed5",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "5872017d-b6f1-4179-a618-bedef68c6d02",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "field_name": "full_name",
       "raw_value": "Rahul Sharma DOB",
       "normalized_value": "RAHUL SHARMA DOB",
@@ -3385,11 +3385,11 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:41.931Z"
+      "created_at": "2026-10-23T21:16:17.684Z"
     },
     {
-      "id": "2fa48c49-574d-490f-aca1-67e84f5a0da9",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "d21f8cf2-db0e-41a4-bd94-92a8c497b564",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "field_name": "dob",
       "raw_value": "1999-05-14",
       "normalized_value": "1999-05-14",
@@ -3397,11 +3397,11 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:41.940Z"
+      "created_at": "2026-10-23T21:16:17.695Z"
     },
     {
-      "id": "147e0003-8a94-43d3-bc85-2fab3822d390",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "fe36716f-7d85-4648-a273-df1e5b0dacd8",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "field_name": "income_annual",
       "raw_value": "4,20,000",
       "normalized_value": "420000",
@@ -3409,11 +3409,11 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:41.954Z"
+      "created_at": "2026-10-23T21:16:17.714Z"
     },
     {
-      "id": "ad7214ec-9467-4a2f-b17c-df63db431971",
-      "document_id": "01b6491d-e12b-4ae7-9b9e-77dcf16ade13",
+      "id": "b712faf3-bcd4-45dd-a16f-62a00e5433a2",
+      "document_id": "59a6d291-a66d-46e0-8ae1-78e99a573957",
       "field_name": "full_name",
       "raw_value": "Rajarambapu Institute of Technology AICT",
       "normalized_value": "RAJARAMBAPU INSTITUTE OF TECHNOLOGY AICT",
@@ -3421,11 +3421,11 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:44.771Z"
+      "created_at": "2026-10-23T21:16:20.767Z"
     },
     {
-      "id": "ab3864ea-3308-444b-8c21-9013c7cf9906",
-      "document_id": "c4f238f1-57c8-44f1-a0e7-8b69b35ff1b8",
+      "id": "6f516a49-04b1-4a8d-b2c7-3c9b9d272747",
+      "document_id": "a39ad1d3-05f0-4100-b2ad-96757295b940",
       "field_name": "expiry_date",
       "raw_value": "2023-01-15",
       "normalized_value": "2023-01-15",
@@ -3433,11 +3433,11 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:46.013Z"
+      "created_at": "2026-10-23T21:16:22.064Z"
     },
     {
-      "id": "8948db59-5258-4777-969a-1c66a2f827d4",
-      "document_id": "d73b049f-7d51-49a9-97bc-c0ef48c1c88e",
+      "id": "a02f71ac-1983-4ba4-9717-630481d97724",
+      "document_id": "18279558-bfc9-4916-bdca-a86a0c5ad1f7",
       "field_name": "full_name",
       "raw_value": "Vikram Singh Verma Annual Income",
       "normalized_value": "VIKRAM SINGH VERMA ANNUAL INCOME",
@@ -3445,11 +3445,11 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:46.068Z"
+      "created_at": "2026-10-23T21:16:22.131Z"
     },
     {
-      "id": "6d7d2af8-6563-4a58-9949-d8ea6729b6de",
-      "document_id": "d73b049f-7d51-49a9-97bc-c0ef48c1c88e",
+      "id": "4f6add3c-7b06-4e93-9409-6fa9440460bb",
+      "document_id": "18279558-bfc9-4916-bdca-a86a0c5ad1f7",
       "field_name": "income_annual",
       "raw_value": "9,50,000",
       "normalized_value": "950000",
@@ -3457,7 +3457,7 @@
       "extraction_method": "pdf_text",
       "page_number": 1,
       "is_confirmed": false,
-      "created_at": "2026-10-23T20:54:46.078Z"
+      "created_at": "2026-10-23T21:16:22.141Z"
     }
   ],
   "verification_checks": [
@@ -5133,9 +5133,9 @@
       "created_at": "2026-10-23T20:44:02.716Z"
     },
     {
-      "id": "fa7b9c4d-7bbf-4e24-8367-02ce068c7463",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "c7c742a5-1696-4c09-a389-2c789778e58f",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "check_type": "MANDATORY_DOCUMENT_PRESENT",
       "outcome": "passed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5145,12 +5145,12 @@
         "sha256": "e6203ca9945b045a5b0f9158f30af8b3f84234eda7c99f0ecb3835bb461243f9"
       },
       "explanation": "Mandatory document 'National Identity Proof (Aadhaar / Passport / Voter ID)' successfully verified present in storage vault.",
-      "timestamp": "2026-10-23T20:54:42.061Z",
-      "created_at": "2026-10-23T20:54:42.061Z"
+      "timestamp": "2026-10-23T21:16:17.893Z",
+      "created_at": "2026-10-23T21:16:17.893Z"
     },
     {
-      "id": "369ab053-c5c9-4cd4-8b0a-c787b70857c3",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "2cc739a7-e02d-4e2e-9cb2-447b0ec64473",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5159,12 +5159,12 @@
         "document_label": "Revenue Authority Income Certificate"
       },
       "explanation": "Mandatory document 'Revenue Authority Income Certificate' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:42.071Z",
-      "created_at": "2026-10-23T20:54:42.072Z"
+      "timestamp": "2026-10-23T21:16:17.915Z",
+      "created_at": "2026-10-23T21:16:17.915Z"
     },
     {
-      "id": "4916b7d3-7598-490f-8756-101deb3dde80",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "f863355c-9cc5-4c0b-9f78-1c93306209ec",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5173,13 +5173,13 @@
         "document_label": "Undergraduate Final Degree Marksheet"
       },
       "explanation": "Mandatory document 'Undergraduate Final Degree Marksheet' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:42.094Z",
-      "created_at": "2026-10-23T20:54:42.094Z"
+      "timestamp": "2026-10-23T21:16:17.957Z",
+      "created_at": "2026-10-23T21:16:17.957Z"
     },
     {
-      "id": "15ccb2f9-bcaa-448a-a3a2-03e307df93a0",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "77833c23-707f-4c69-a415-f2962197d7dc",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "check_type": "IDENTITY_NAME_CONCORDANCE",
       "outcome": "passed",
       "method": "NORMALIZED_STRING_COMPARISON",
@@ -5188,13 +5188,13 @@
         "extracted_name": "Rahul Sharma DOB"
       },
       "explanation": "Applicant declared name 'Rahul Sharma' matches extracted identity document evidence 'Rahul Sharma DOB'.",
-      "timestamp": "2026-10-23T20:54:42.115Z",
-      "created_at": "2026-10-23T20:54:42.115Z"
+      "timestamp": "2026-10-23T21:16:18.012Z",
+      "created_at": "2026-10-23T21:16:18.012Z"
     },
     {
-      "id": "8232380a-c94a-490b-8a4a-f10cf0c58e49",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "c56efaae-4e9f-4ba3-ab3e-a89ec105e67d",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "check_type": "ANNUAL_INCOME_CONCORDANCE",
       "outcome": "passed",
       "method": "NUMERIC_EQUALITY_TEST",
@@ -5203,13 +5203,13 @@
         "extracted": 420000
       },
       "explanation": "Declared annual income aligns exactly with revenue certificate proof.",
-      "timestamp": "2026-10-23T20:54:42.125Z",
-      "created_at": "2026-10-23T20:54:42.125Z"
+      "timestamp": "2026-10-23T21:16:18.058Z",
+      "created_at": "2026-10-23T21:16:18.058Z"
     },
     {
-      "id": "d3e94410-4223-41fd-9eb5-236acb7bafe9",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
-      "document_id": "01b6491d-e12b-4ae7-9b9e-77dcf16ade13",
+      "id": "cf6fb8b6-b57d-46bc-ac85-8b1936736657",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
+      "document_id": "59a6d291-a66d-46e0-8ae1-78e99a573957",
       "check_type": "MANDATORY_DOCUMENT_PRESENT",
       "outcome": "passed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5219,12 +5219,12 @@
         "sha256": "a4ffff03ac41c05601000e8187ddf6712f267a5579572b757d7caf6145d72cc7"
       },
       "explanation": "Mandatory document 'Preceding Session AICTE Extension of Approval (EoA) Order' successfully verified present in storage vault.",
-      "timestamp": "2026-10-23T20:54:44.847Z",
-      "created_at": "2026-10-23T20:54:44.847Z"
+      "timestamp": "2026-10-23T21:16:20.853Z",
+      "created_at": "2026-10-23T21:16:20.853Z"
     },
     {
-      "id": "0b404a67-d567-4eff-bd9a-89ec829d1605",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "1fa99e64-836c-4832-9d9c-cf489f384e70",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5233,12 +5233,12 @@
         "document_label": "State Government Concurrence / NOC"
       },
       "explanation": "Mandatory document 'State Government Concurrence / NOC' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:44.856Z",
-      "created_at": "2026-10-23T20:54:44.856Z"
+      "timestamp": "2026-10-23T21:16:20.865Z",
+      "created_at": "2026-10-23T21:16:20.865Z"
     },
     {
-      "id": "c99dfa29-9066-42fa-9ed4-58b3e76a2c3a",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "54ba0eb8-8210-4874-999a-596e69522fb6",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5247,12 +5247,12 @@
         "document_label": "Affiliating University Annual Affiliation Order"
       },
       "explanation": "Mandatory document 'Affiliating University Annual Affiliation Order' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:44.875Z",
-      "created_at": "2026-10-23T20:54:44.875Z"
+      "timestamp": "2026-10-23T21:16:20.886Z",
+      "created_at": "2026-10-23T21:16:20.886Z"
     },
     {
-      "id": "df4b4f21-3b4d-4f15-9086-f894862345d8",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "85beb0af-f193-451f-8862-3842757ccb07",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5261,12 +5261,12 @@
         "document_label": "Municipal Fire Safety Clearance Certificate"
       },
       "explanation": "Mandatory document 'Municipal Fire Safety Clearance Certificate' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:44.894Z",
-      "created_at": "2026-10-23T20:54:44.894Z"
+      "timestamp": "2026-10-23T21:16:20.907Z",
+      "created_at": "2026-10-23T21:16:20.907Z"
     },
     {
-      "id": "8c5a9fca-be9f-4d12-a6eb-8982d0709d06",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "8b89b6e4-4d56-4050-b111-1ae4390cb20c",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5275,12 +5275,12 @@
         "document_label": "Land Title & Built-up Instructional Area Affidavit"
       },
       "explanation": "Mandatory document 'Land Title & Built-up Instructional Area Affidavit' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:44.912Z",
-      "created_at": "2026-10-23T20:54:44.912Z"
+      "timestamp": "2026-10-23T21:16:20.932Z",
+      "created_at": "2026-10-23T21:16:20.932Z"
     },
     {
-      "id": "900e22af-4c89-48d0-b348-c4a2d7def64e",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "c2250f1f-4100-4da8-8568-ae1865b1e838",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5289,12 +5289,12 @@
         "document_label": "Technical Education Regulatory (TER) Fee Receipt"
       },
       "explanation": "Mandatory document 'Technical Education Regulatory (TER) Fee Receipt' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:44.932Z",
-      "created_at": "2026-10-23T20:54:44.932Z"
+      "timestamp": "2026-10-23T21:16:20.953Z",
+      "created_at": "2026-10-23T21:16:20.953Z"
     },
     {
-      "id": "3b494aba-6266-4164-8941-25294256d698",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "23c9340a-e51c-41ab-a6ba-70449a7940ac",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5303,13 +5303,13 @@
         "document_label": "Mandatory Anti-Ragging Institutional Undertaking"
       },
       "explanation": "Mandatory document 'Mandatory Anti-Ragging Institutional Undertaking' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:44.953Z",
-      "created_at": "2026-10-23T20:54:44.953Z"
+      "timestamp": "2026-10-23T21:16:20.978Z",
+      "created_at": "2026-10-23T21:16:20.978Z"
     },
     {
-      "id": "b1e84866-7647-4e42-a9a6-09e4dd396081",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "49bbb7ed-3e9a-41de-8dd7-e0c6705ecd5b",
+      "id": "a272f370-50ff-4296-bcc2-bc2f4f363eff",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "0a9972ef-f7bd-4ff2-b8e3-5e2e630b4829",
       "check_type": "MANDATORY_DOCUMENT_PRESENT",
       "outcome": "passed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5319,13 +5319,13 @@
         "sha256": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de"
       },
       "explanation": "Mandatory document 'Preceding Session AICTE Extension of Approval (EoA) Order' successfully verified present in storage vault.",
-      "timestamp": "2026-10-23T20:54:46.298Z",
-      "created_at": "2026-10-23T20:54:46.298Z"
+      "timestamp": "2026-10-23T21:16:22.371Z",
+      "created_at": "2026-10-23T21:16:22.371Z"
     },
     {
-      "id": "d23a84f6-f5ac-4805-a602-f4fc1452e336",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "id": "5b2cb462-60d7-47c2-9a2b-eb47634341fc",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "check_type": "MANDATORY_DOCUMENT_PRESENT",
       "outcome": "passed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5335,12 +5335,12 @@
         "sha256": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de"
       },
       "explanation": "Mandatory document 'State Government Concurrence / NOC' successfully verified present in storage vault.",
-      "timestamp": "2026-10-23T20:54:46.308Z",
-      "created_at": "2026-10-23T20:54:46.308Z"
+      "timestamp": "2026-10-23T21:16:22.382Z",
+      "created_at": "2026-10-23T21:16:22.382Z"
     },
     {
-      "id": "15feb08f-7ec9-454e-9241-fb770ce4533e",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "04bd6a4e-161e-4c53-8dc3-fb5aa23578ea",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5349,12 +5349,12 @@
         "document_label": "Affiliating University Annual Affiliation Order"
       },
       "explanation": "Mandatory document 'Affiliating University Annual Affiliation Order' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:46.317Z",
-      "created_at": "2026-10-23T20:54:46.317Z"
+      "timestamp": "2026-10-23T21:16:22.393Z",
+      "created_at": "2026-10-23T21:16:22.393Z"
     },
     {
-      "id": "daba24fb-dbbe-4dbc-9acf-dcfed98824fa",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "c04fa2bc-d834-480b-b4ba-d2033783acba",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5363,12 +5363,12 @@
         "document_label": "Municipal Fire Safety Clearance Certificate"
       },
       "explanation": "Mandatory document 'Municipal Fire Safety Clearance Certificate' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:46.338Z",
-      "created_at": "2026-10-23T20:54:46.338Z"
+      "timestamp": "2026-10-23T21:16:22.415Z",
+      "created_at": "2026-10-23T21:16:22.415Z"
     },
     {
-      "id": "5f3d38c0-4ce7-4a55-bc64-028b2310b025",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "b5410334-1961-41d7-83d8-e291cd85dc8e",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5377,12 +5377,12 @@
         "document_label": "Land Title & Built-up Instructional Area Affidavit"
       },
       "explanation": "Mandatory document 'Land Title & Built-up Instructional Area Affidavit' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:46.358Z",
-      "created_at": "2026-10-23T20:54:46.358Z"
+      "timestamp": "2026-10-23T21:16:22.436Z",
+      "created_at": "2026-10-23T21:16:22.436Z"
     },
     {
-      "id": "e5365f5f-15d3-4497-a477-36352a4dba55",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "10f70704-05cd-4461-b21c-0b2c8b0d4890",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5391,12 +5391,12 @@
         "document_label": "Technical Education Regulatory (TER) Fee Receipt"
       },
       "explanation": "Mandatory document 'Technical Education Regulatory (TER) Fee Receipt' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:46.380Z",
-      "created_at": "2026-10-23T20:54:46.380Z"
+      "timestamp": "2026-10-23T21:16:22.457Z",
+      "created_at": "2026-10-23T21:16:22.457Z"
     },
     {
-      "id": "4eecf4de-614e-44f5-b624-6ecf435d53c6",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "043c6c92-20e9-46b6-a9f0-637036431620",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "check_type": "MISSING_MANDATORY_DOCUMENT",
       "outcome": "failed",
       "method": "SCHEMA_REQUIREMENT_MATCH",
@@ -5405,13 +5405,13 @@
         "document_label": "Mandatory Anti-Ragging Institutional Undertaking"
       },
       "explanation": "Mandatory document 'Mandatory Anti-Ragging Institutional Undertaking' has not been uploaded.",
-      "timestamp": "2026-10-23T20:54:46.403Z",
-      "created_at": "2026-10-23T20:54:46.403Z"
+      "timestamp": "2026-10-23T21:16:22.487Z",
+      "created_at": "2026-10-23T21:16:22.487Z"
     },
     {
-      "id": "7b4f6890-1130-4d08-b3d0-44b375f02b89",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "49bbb7ed-3e9a-41de-8dd7-e0c6705ecd5b",
+      "id": "7d5e55fe-3cec-458f-9c2a-a7f3e32c0ef6",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "0a9972ef-f7bd-4ff2-b8e3-5e2e630b4829",
       "check_type": "DOCUMENT_READABILITY",
       "outcome": "inconclusive",
       "method": "OCR_TEXT_SCAN",
@@ -5420,13 +5420,13 @@
         "fields_extracted": 0
       },
       "explanation": "Document 'doc1.pdf' text could not be extracted with high confidence; manual visual inspection required.",
-      "timestamp": "2026-10-23T20:54:46.422Z",
-      "created_at": "2026-10-23T20:54:46.422Z"
+      "timestamp": "2026-10-23T21:16:22.508Z",
+      "created_at": "2026-10-23T21:16:22.508Z"
     },
     {
-      "id": "1c3f9d52-9934-4b1d-a0b4-939a738ee2d8",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "id": "f18ae189-c035-4085-8d45-0ab006110b5e",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "check_type": "DOCUMENT_READABILITY",
       "outcome": "inconclusive",
       "method": "OCR_TEXT_SCAN",
@@ -5435,13 +5435,13 @@
         "fields_extracted": 0
       },
       "explanation": "Document 'doc2.pdf' text could not be extracted with high confidence; manual visual inspection required.",
-      "timestamp": "2026-10-23T20:54:46.442Z",
-      "created_at": "2026-10-23T20:54:46.442Z"
+      "timestamp": "2026-10-23T21:16:22.530Z",
+      "created_at": "2026-10-23T21:16:22.530Z"
     },
     {
-      "id": "72f922c4-7733-48c4-82f3-d4a1f3223fd9",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "id": "87780df3-fc82-443d-a825-419582243040",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "check_type": "DUPLICATE_DOCUMENT_HASH",
       "outcome": "failed",
       "method": "SHA256_HASH_COMPARISON",
@@ -5451,8 +5451,8 @@
         "sha256": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de"
       },
       "explanation": "Identical cryptographic SHA-256 hash detected across 'doc2.pdf' and 'doc1.pdf'. Critical safeguard: matching hash establishes file identity relative to compared file; it does not prove document authenticity or fraud.",
-      "timestamp": "2026-10-23T20:54:46.462Z",
-      "created_at": "2026-10-23T20:54:46.462Z"
+      "timestamp": "2026-10-23T21:16:22.552Z",
+      "created_at": "2026-10-23T21:16:22.552Z"
     }
   ],
   "issuing_authority_checks": [
@@ -6288,8 +6288,8 @@
       "created_at": "2026-10-23T20:44:03.908Z"
     },
     {
-      "id": "6f877e1a-eb14-42dc-86af-f6407881c032",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "16d6ec9d-6b8f-449c-8597-a48aedd9a89c",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "authority_code": "AICTE_CENTRAL_REGISTRY",
       "authority_name": "AICTE National Approved Institution Database",
       "verification_method": "REST_SECURE_GATEWAY_OAUTH2",
@@ -6306,13 +6306,13 @@
         ]
       },
       "notes": "External issuing authority API gateway is not provisioned in this environment.",
-      "timestamp": "2026-10-23T20:54:42.136Z",
-      "created_at": "2026-10-23T20:54:42.136Z"
+      "timestamp": "2026-10-23T21:16:18.081Z",
+      "created_at": "2026-10-23T21:16:18.081Z"
     },
     {
-      "id": "0a85bb4f-a1bc-4d04-ad5e-e96d8fafc215",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
-      "document_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "id": "2f5f1fb3-d9b8-4062-b6ed-8a4f24b837b6",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+      "document_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "authority_code": "DIGILOCKER_NAD",
       "authority_name": "National Academic Depository (MeitY DigiLocker)",
       "verification_method": "DIGILOCKER_HMAC_QUERY",
@@ -6327,12 +6327,12 @@
         "verified_entity": "Rahul Sharma"
       },
       "notes": "Cryptographically verified via DigiLocker partner test adapter.",
-      "timestamp": "2026-10-23T20:54:42.157Z",
-      "created_at": "2026-10-23T20:54:42.157Z"
+      "timestamp": "2026-10-23T21:16:18.122Z",
+      "created_at": "2026-10-23T21:16:18.122Z"
     },
     {
-      "id": "30f27c18-2f5a-45ea-8991-c8d3704f85a9",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "2fa88e06-b63b-4955-b169-3c49c06f7a1c",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "authority_code": "AICTE_CENTRAL_REGISTRY",
       "authority_name": "AICTE National Approved Institution Database",
       "verification_method": "REST_SECURE_GATEWAY_OAUTH2",
@@ -6349,12 +6349,12 @@
         ]
       },
       "notes": "External issuing authority API gateway is not provisioned in this environment.",
-      "timestamp": "2026-10-23T20:54:44.978Z",
-      "created_at": "2026-10-23T20:54:44.978Z"
+      "timestamp": "2026-10-23T21:16:21.005Z",
+      "created_at": "2026-10-23T21:16:21.005Z"
     },
     {
-      "id": "db777cba-b1cc-451f-90f8-42d6b053e573",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "7b97af38-411a-4443-936a-605d4ddb51b5",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "authority_code": "STATE_TECH_BOARD",
       "authority_name": "State Directorate of Technical Education / Affiliating University Portal",
       "verification_method": "UNIVERSITY_AFFILIATION_QUERY",
@@ -6367,12 +6367,12 @@
         "affiliation_valid": true
       },
       "notes": "University affiliation concurrence confirmed.",
-      "timestamp": "2026-10-23T20:54:44.997Z",
-      "created_at": "2026-10-23T20:54:44.997Z"
+      "timestamp": "2026-10-23T21:16:21.027Z",
+      "created_at": "2026-10-23T21:16:21.027Z"
     },
     {
-      "id": "18683dae-3cf9-47f2-9e6f-443840f707e3",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "50036a73-42da-4f81-bd7d-785201a43cd0",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "authority_code": "AICTE_CENTRAL_REGISTRY",
       "authority_name": "AICTE National Approved Institution Database",
       "verification_method": "REST_SECURE_GATEWAY_OAUTH2",
@@ -6389,12 +6389,12 @@
         ]
       },
       "notes": "External issuing authority API gateway is not provisioned in this environment.",
-      "timestamp": "2026-10-23T20:54:46.491Z",
-      "created_at": "2026-10-23T20:54:46.491Z"
+      "timestamp": "2026-10-23T21:16:22.584Z",
+      "created_at": "2026-10-23T21:16:22.584Z"
     },
     {
-      "id": "ab4a70f1-ab63-4084-8492-84c284722a33",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "9dfcefa5-1fd3-40d2-9a8f-2ac3d81e12d0",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "authority_code": "STATE_TECH_BOARD",
       "authority_name": "State Directorate of Technical Education / Affiliating University Portal",
       "verification_method": "UNIVERSITY_AFFILIATION_QUERY",
@@ -6405,12 +6405,12 @@
         "reason": "No affiliating university declared in application parameters"
       },
       "notes": "",
-      "timestamp": "2026-10-23T20:54:46.511Z",
-      "created_at": "2026-10-23T20:54:46.511Z"
+      "timestamp": "2026-10-23T21:16:22.606Z",
+      "created_at": "2026-10-23T21:16:22.606Z"
     },
     {
-      "id": "8a967b49-3205-425a-a337-5c2f1c103a2d",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "331bb629-f1e3-4488-80a4-cdbbf1eb5034",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "authority_code": "DIGILOCKER_NAD",
       "authority_name": "National Academic Depository (MeitY DigiLocker)",
       "verification_method": "DIGILOCKER_HMAC_QUERY",
@@ -6425,12 +6425,12 @@
         "verified_entity": "Rahul Sharma"
       },
       "notes": "Cryptographically verified via DigiLocker partner test adapter.",
-      "timestamp": "2026-10-23T20:54:47.530Z",
-      "created_at": "2026-10-23T20:54:47.530Z"
+      "timestamp": "2026-10-23T21:16:23.655Z",
+      "created_at": "2026-10-23T21:16:23.655Z"
     },
     {
-      "id": "83e360e7-a7ab-47c6-85bc-d2968f6ea0a4",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "3394ab70-4537-462b-92c4-359b6f113f7e",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "authority_code": "NSDL_PAN_VERIFY",
       "authority_name": "NSDL / Income Tax Department PAN Verification Gateway",
       "verification_method": "NSDL_B2B_REST_ENCRYPTED",
@@ -6442,12 +6442,12 @@
         "reason": "Invalid PAN syntax structure"
       },
       "notes": "Identifier does not conform to Income Tax PAN specification.",
-      "timestamp": "2026-10-23T20:54:47.552Z",
-      "created_at": "2026-10-23T20:54:47.552Z"
+      "timestamp": "2026-10-23T21:16:23.677Z",
+      "created_at": "2026-10-23T21:16:23.677Z"
     },
     {
-      "id": "7ae456bb-cb8d-4a4a-bb66-96f01bda86ca",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "a4f811f5-26c5-4f55-b0eb-332d1f92e0c4",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "authority_code": "AICTE_CENTRAL_REGISTRY",
       "authority_name": "AICTE National Approved Institution Database",
       "verification_method": "REST_SECURE_GATEWAY_OAUTH2",
@@ -6464,12 +6464,12 @@
         ]
       },
       "notes": "External issuing authority API gateway is not provisioned in this environment.",
-      "timestamp": "2026-10-23T20:54:47.574Z",
-      "created_at": "2026-10-23T20:54:47.574Z"
+      "timestamp": "2026-10-23T21:16:23.702Z",
+      "created_at": "2026-10-23T21:16:23.702Z"
     },
     {
-      "id": "6f5b5a1d-a7bb-4b4d-95bd-1430712f9051",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "acc1817e-3f45-427b-8624-8a827b5fa346",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "authority_code": "STATE_TECH_BOARD",
       "authority_name": "State Directorate of Technical Education / Affiliating University Portal",
       "verification_method": "UNIVERSITY_AFFILIATION_QUERY",
@@ -6481,8 +6481,8 @@
         "retryAttempts": 3
       },
       "notes": "Authority gateway is currently unreachable; deterministic fallback applied.",
-      "timestamp": "2026-10-23T20:54:47.595Z",
-      "created_at": "2026-10-23T20:54:47.595Z"
+      "timestamp": "2026-10-23T21:16:23.724Z",
+      "created_at": "2026-10-23T21:16:23.724Z"
     }
   ],
   "document_anomalies": [
@@ -6655,9 +6655,9 @@
       "created_at": "2026-10-23T20:44:02.725Z"
     },
     {
-      "id": "c08c7cdb-7e15-43f1-9d88-92409a3978a3",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "49bbb7ed-3e9a-41de-8dd7-e0c6705ecd5b",
+      "id": "118837cc-e721-4391-b921-92ca0ef961a2",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "0a9972ef-f7bd-4ff2-b8e3-5e2e630b4829",
       "category": "LOW_CONFIDENCE_SCAN",
       "description": "Document 'doc1.pdf' yielded no readable text blocks during OCR; marked for manual officer inspection.",
       "evidence": {
@@ -6666,12 +6666,12 @@
       "detection_method": "OCR_CONFIDENCE_THRESHOLD_EVALUATION",
       "confidence": 0.9,
       "status": "flagged",
-      "created_at": "2026-10-23T20:54:46.433Z"
+      "created_at": "2026-10-23T21:16:22.519Z"
     },
     {
-      "id": "e9ca80fd-8d71-4888-9b2a-58013502ddc8",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "id": "872d5fed-1f74-4589-9850-f5a6e54b6b91",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "category": "LOW_CONFIDENCE_SCAN",
       "description": "Document 'doc2.pdf' yielded no readable text blocks during OCR; marked for manual officer inspection.",
       "evidence": {
@@ -6680,12 +6680,12 @@
       "detection_method": "OCR_CONFIDENCE_THRESHOLD_EVALUATION",
       "confidence": 0.9,
       "status": "flagged",
-      "created_at": "2026-10-23T20:54:46.452Z"
+      "created_at": "2026-10-23T21:16:22.541Z"
     },
     {
-      "id": "05442a8f-dcd9-47b4-a320-57ee065aa660",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
-      "document_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "id": "67ac0d5a-44bf-4202-a36f-f271df10f7a7",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
+      "document_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "category": "DUPLICATE_DOCUMENT",
       "description": "Duplicate file content uploaded under different slots: 'doc2.pdf' shares hash with 'doc1.pdf'.",
       "evidence": {
@@ -6694,7 +6694,7 @@
       "detection_method": "CRYPTOGRAPHIC_DIGEST_COMPARISON",
       "confidence": 1,
       "status": "flagged",
-      "created_at": "2026-10-23T20:54:46.471Z"
+      "created_at": "2026-10-23T21:16:22.564Z"
     }
   ],
   "discrepancies": [
@@ -7519,8 +7519,8 @@
       "created_at": "2026-10-23T20:44:02.738Z"
     },
     {
-      "id": "6c928380-ef33-4430-bfd5-7009337864eb",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "919bdd8f-75c8-4a8a-9f36-0fa32a24f4c1",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "field_name": "income_certificate",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7528,11 +7528,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Revenue Authority Income Certificate' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:42.082Z"
+      "created_at": "2026-10-23T21:16:17.940Z"
     },
     {
-      "id": "3b62bfb3-a345-4e27-8eb5-706c87f734c8",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "3b62e384-05bb-4eea-876e-446c0157ba42",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "field_name": "degree_marksheet",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7540,11 +7540,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Undergraduate Final Degree Marksheet' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:42.104Z"
+      "created_at": "2026-10-23T21:16:17.982Z"
     },
     {
-      "id": "e7fa1f0c-d029-4da0-a8fd-1ce3a7eaed63",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "b5a9777c-3985-4390-999b-070cbbe77076",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "field_name": "state_govt_noc",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7552,11 +7552,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'State Government Concurrence / NOC' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:44.866Z"
+      "created_at": "2026-10-23T21:16:20.876Z"
     },
     {
-      "id": "be65fb28-fd18-44d3-836e-5a9b4842cb08",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "68dcb21e-6526-4caa-9a81-e93d7b895890",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "field_name": "university_affiliation_noc",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7564,11 +7564,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Affiliating University Annual Affiliation Order' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:44.884Z"
+      "created_at": "2026-10-23T21:16:20.898Z"
     },
     {
-      "id": "a571aead-4e4a-4d35-b2af-24104a7ee3c9",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "080c3c13-ca71-4c47-9a74-feef1294499a",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "field_name": "fire_safety_cert",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7576,11 +7576,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Municipal Fire Safety Clearance Certificate' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:44.903Z"
+      "created_at": "2026-10-23T21:16:20.921Z"
     },
     {
-      "id": "dbf17b42-6fb9-4398-9fdc-47142bb2aa4e",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "92ada6db-e7f4-4ad5-809d-7a54460309a4",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "field_name": "land_building_affidavit",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7588,11 +7588,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Land Title & Built-up Instructional Area Affidavit' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:44.922Z"
+      "created_at": "2026-10-23T21:16:20.943Z"
     },
     {
-      "id": "c04c35c1-6c4e-46ab-be1d-0624acca7f5f",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "b2d92281-f410-4ec6-8188-a6e78538a021",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "field_name": "ter_fee_receipt",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7600,11 +7600,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Technical Education Regulatory (TER) Fee Receipt' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:44.942Z"
+      "created_at": "2026-10-23T21:16:20.964Z"
     },
     {
-      "id": "dbde5a23-c5b7-4605-95cd-ef6a91e8ae7e",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "96c89186-fc5f-48c7-bcab-ea02bb9f9d7e",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "field_name": "anti_ragging_undertaking",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7612,11 +7612,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Mandatory Anti-Ragging Institutional Undertaking' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:44.967Z"
+      "created_at": "2026-10-23T21:16:20.993Z"
     },
     {
-      "id": "2e409b73-e4ab-465b-a92e-cab3f5ae3ad1",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "34e59e7c-543a-4f00-b4d4-99373ce11d2d",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "field_name": "university_affiliation_noc",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7624,11 +7624,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Affiliating University Annual Affiliation Order' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:46.327Z"
+      "created_at": "2026-10-23T21:16:22.405Z"
     },
     {
-      "id": "528d5089-c16c-4d76-8164-e9b7f7d22cd5",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "e58fe4f7-7c5d-43ae-a937-4a9ea65e9482",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "field_name": "fire_safety_cert",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7636,11 +7636,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Municipal Fire Safety Clearance Certificate' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:46.348Z"
+      "created_at": "2026-10-23T21:16:22.425Z"
     },
     {
-      "id": "0ebd51b4-ebdd-48d5-9c7b-4e07c1ec9ccf",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "f7eef52f-95c1-43a3-bfac-ea0408cf1f92",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "field_name": "land_building_affidavit",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7648,11 +7648,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Land Title & Built-up Instructional Area Affidavit' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:46.370Z"
+      "created_at": "2026-10-23T21:16:22.447Z"
     },
     {
-      "id": "090fdb08-8ba9-4385-bd73-7bb790b1468c",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "5ad2b6ff-9a44-4a22-b16e-fd072bed3420",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "field_name": "ter_fee_receipt",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7660,11 +7660,11 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Technical Education Regulatory (TER) Fee Receipt' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:46.390Z"
+      "created_at": "2026-10-23T21:16:22.473Z"
     },
     {
-      "id": "0fb25759-726a-43bc-973d-c1cfbb800712",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "9e7fa54a-7a42-43df-a63e-3663ea34ece0",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "field_name": "anti_ragging_undertaking",
       "declared_value": "Required Document",
       "observed_value": "Missing / Not Uploaded",
@@ -7672,20 +7672,20 @@
       "status": "open",
       "comparison_method": "DOCUMENT_INVENTORY_AUDIT",
       "explanation": "Application requires 'Mandatory Anti-Ragging Institutional Undertaking' for statutory eligibility evaluation.",
-      "created_at": "2026-10-23T20:54:46.413Z"
+      "created_at": "2026-10-23T21:16:22.498Z"
     },
     {
-      "id": "ab813efb-fc9a-4a39-ab25-15e0b65f4755",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "1f924a8b-6748-43ff-a825-bdc0191257a6",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "field_name": "state_govt_noc",
       "declared_value": "Unique state_govt_noc",
       "observed_value": "Duplicate of aicte_previous_eoa",
-      "document_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "document_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "severity": "medium",
       "status": "open",
       "comparison_method": "HASH_DIGEST_CONCORDANCE",
       "explanation": "Identical file uploaded under multiple document types. Reviewer verification required.",
-      "created_at": "2026-10-23T20:54:46.482Z"
+      "created_at": "2026-10-23T21:16:22.574Z"
     }
   ],
   "compliance_rules": [
@@ -9908,8 +9908,8 @@
       "created_at": "2026-10-23T20:44:02.884Z"
     },
     {
-      "id": "93c24cbd-fe72-4298-ab53-9a384ef2678d",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "63f42b39-e851-4a50-a31c-354414104dcb",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "5c3e2a5c-faa9-4867-9767-2cc3f580ff7c",
       "rule_version_id": "de477b9a-4b0b-4bdf-a317-1854ee216bed",
       "outcome": "failed",
@@ -9918,12 +9918,12 @@
       },
       "explanation": "Rule evaluation failed: Observed 2 (Expected: 0). Remediation: Please upload all missing required supporting documents.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:42.192Z",
-      "created_at": "2026-10-23T20:54:42.192Z"
+      "evaluated_at": "2026-10-23T21:16:18.167Z",
+      "created_at": "2026-10-23T21:16:18.167Z"
     },
     {
-      "id": "e4ad6940-53c6-47d1-bb76-7430619d397c",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "12764142-39b4-4f47-ab6c-37b424bcc5ed",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "36660ce2-0ae7-42d9-a3a4-169cf1c7b26a",
       "rule_version_id": "9e99fd11-a00b-445b-8e29-9dcbda707d8f",
       "outcome": "passed",
@@ -9932,12 +9932,12 @@
       },
       "explanation": "All criteria for rule 'Annual Income Eligibility Ceiling' were satisfied.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:42.202Z",
-      "created_at": "2026-10-23T20:54:42.202Z"
+      "evaluated_at": "2026-10-23T21:16:18.176Z",
+      "created_at": "2026-10-23T21:16:18.176Z"
     },
     {
-      "id": "a4289366-9ae9-4428-b997-50a7dcc1d650",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "9b3e1aa0-51e3-41b5-8732-5045068cea6c",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "00d84833-c85a-41a5-ae41-b3d83e4b1181",
       "rule_version_id": "eec162a6-c86c-4c73-9965-c77e4daec17f",
       "outcome": "passed",
@@ -9946,12 +9946,12 @@
       },
       "explanation": "All criteria for rule 'Minimum Qualifying Academic Score' were satisfied.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:42.215Z",
-      "created_at": "2026-10-23T20:54:42.215Z"
+      "evaluated_at": "2026-10-23T21:16:18.187Z",
+      "created_at": "2026-10-23T21:16:18.187Z"
     },
     {
-      "id": "1076d567-5821-4516-aa33-e1433cf82d95",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "8ef05468-5bd0-4f36-83dd-8dd7ab1b9d5c",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "7f3b6989-c3a5-4071-9b46-84de972c66f5",
       "rule_version_id": "27aa6bef-31a5-4667-bcd4-4f1c1d436303",
       "outcome": "inconclusive",
@@ -9962,12 +9962,12 @@
       "missing_inputs": [
         "extracted.name"
       ],
-      "evaluated_at": "2026-10-23T20:54:42.228Z",
-      "created_at": "2026-10-23T20:54:42.228Z"
+      "evaluated_at": "2026-10-23T21:16:18.198Z",
+      "created_at": "2026-10-23T21:16:18.198Z"
     },
     {
-      "id": "b638eb8f-ea8d-4b06-a168-2114ba551b77",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "8d85ab29-03df-44d7-9dce-1c5839a93bb1",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "485f2d4b-d1c7-4741-8a56-b27f9c35822c",
       "rule_version_id": "b17c0c96-a240-41bc-b06d-29327e78505e",
       "outcome": "inconclusive",
@@ -9978,12 +9978,12 @@
       "missing_inputs": [
         "extracted.expiry_date"
       ],
-      "evaluated_at": "2026-10-23T20:54:42.239Z",
-      "created_at": "2026-10-23T20:54:42.239Z"
+      "evaluated_at": "2026-10-23T21:16:18.207Z",
+      "created_at": "2026-10-23T21:16:18.207Z"
     },
     {
-      "id": "15f20361-919f-4e8e-99f7-ecea1616b85b",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "a56b03fa-d290-489c-8f33-19f0e74ff6c9",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "b4513bfd-614d-4baa-898d-4a22d032186b",
       "rule_version_id": "fdec5095-c927-44cf-8d95-78262387092f",
       "outcome": "inconclusive",
@@ -9994,12 +9994,12 @@
       "missing_inputs": [
         "declared_data.faculty_count_total"
       ],
-      "evaluated_at": "2026-10-23T20:54:42.250Z",
-      "created_at": "2026-10-23T20:54:42.250Z"
+      "evaluated_at": "2026-10-23T21:16:18.220Z",
+      "created_at": "2026-10-23T21:16:18.220Z"
     },
     {
-      "id": "c34c1eff-e46d-45e2-8ad8-08f0a8091878",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "74263f9e-2821-4e74-b88b-424cf7fa8a5a",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "7c2b7ac7-40b4-4deb-b2af-14d2be3b913f",
       "rule_version_id": "8290ba3f-42b3-491e-bdae-ab6b9bb7ec43",
       "outcome": "inconclusive",
@@ -10010,12 +10010,12 @@
       "missing_inputs": [
         "declared_data.land_area_acres"
       ],
-      "evaluated_at": "2026-10-23T20:54:42.260Z",
-      "created_at": "2026-10-23T20:54:42.260Z"
+      "evaluated_at": "2026-10-23T21:16:18.231Z",
+      "created_at": "2026-10-23T21:16:18.231Z"
     },
     {
-      "id": "4fddb71d-5703-4122-abed-f11e1fdf0250",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "233ebcdc-1b38-4024-a03d-bfeeafd87d90",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "rule_id": "c1c0c3e5-b54d-431d-8cfd-382ef0f0b673",
       "rule_version_id": "c49fbcbe-35ce-46a3-81f8-bcca58b6ac0a",
       "outcome": "inconclusive",
@@ -10026,12 +10026,12 @@
       "missing_inputs": [
         "extracted.expiry_date"
       ],
-      "evaluated_at": "2026-10-23T20:54:42.271Z",
-      "created_at": "2026-10-23T20:54:42.271Z"
+      "evaluated_at": "2026-10-23T21:16:18.241Z",
+      "created_at": "2026-10-23T21:16:18.241Z"
     },
     {
-      "id": "c00f208a-578e-4434-b3b3-8a2c84af14b1",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "f77448f4-b6c2-479b-b5ad-050ca8b0b5c7",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "5c3e2a5c-faa9-4867-9767-2cc3f580ff7c",
       "rule_version_id": "de477b9a-4b0b-4bdf-a317-1854ee216bed",
       "outcome": "failed",
@@ -10040,12 +10040,12 @@
       },
       "explanation": "Rule evaluation failed: Observed 6 (Expected: 0). Remediation: Please upload all missing required supporting documents.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:45.027Z",
-      "created_at": "2026-10-23T20:54:45.028Z"
+      "evaluated_at": "2026-10-23T21:16:21.060Z",
+      "created_at": "2026-10-23T21:16:21.060Z"
     },
     {
-      "id": "166b32c9-55a3-42ba-8923-55c812ba0d0c",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "4f9cced7-1f61-4551-97f9-2c5881c4d37b",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "36660ce2-0ae7-42d9-a3a4-169cf1c7b26a",
       "rule_version_id": "9e99fd11-a00b-445b-8e29-9dcbda707d8f",
       "outcome": "inconclusive",
@@ -10056,12 +10056,12 @@
       "missing_inputs": [
         "declared_data.income_annual"
       ],
-      "evaluated_at": "2026-10-23T20:54:45.037Z",
-      "created_at": "2026-10-23T20:54:45.037Z"
+      "evaluated_at": "2026-10-23T21:16:21.071Z",
+      "created_at": "2026-10-23T21:16:21.071Z"
     },
     {
-      "id": "80b63608-2563-4076-a6ee-2e76818a681a",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "df52b050-2c09-4ebd-9b09-dc52c51433fd",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "00d84833-c85a-41a5-ae41-b3d83e4b1181",
       "rule_version_id": "eec162a6-c86c-4c73-9965-c77e4daec17f",
       "outcome": "inconclusive",
@@ -10072,12 +10072,12 @@
       "missing_inputs": [
         "declared_data.undergrad_gpa"
       ],
-      "evaluated_at": "2026-10-23T20:54:45.047Z",
-      "created_at": "2026-10-23T20:54:45.047Z"
+      "evaluated_at": "2026-10-23T21:16:21.082Z",
+      "created_at": "2026-10-23T21:16:21.082Z"
     },
     {
-      "id": "5f7049ba-d23d-4aa1-9b28-4c05dbc0fac1",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "58bb4458-4d1d-4de1-8350-b2f01ebbee01",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "7f3b6989-c3a5-4071-9b46-84de972c66f5",
       "rule_version_id": "27aa6bef-31a5-4667-bcd4-4f1c1d436303",
       "outcome": "inconclusive",
@@ -10088,12 +10088,12 @@
       "missing_inputs": [
         "extracted.name"
       ],
-      "evaluated_at": "2026-10-23T20:54:45.056Z",
-      "created_at": "2026-10-23T20:54:45.056Z"
+      "evaluated_at": "2026-10-23T21:16:21.092Z",
+      "created_at": "2026-10-23T21:16:21.092Z"
     },
     {
-      "id": "7a6e3684-a7e0-4b26-b196-e2d41c92d254",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "ba21b1f7-a8a0-4b37-9942-e2d2867562c5",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "485f2d4b-d1c7-4741-8a56-b27f9c35822c",
       "rule_version_id": "b17c0c96-a240-41bc-b06d-29327e78505e",
       "outcome": "inconclusive",
@@ -10104,12 +10104,12 @@
       "missing_inputs": [
         "extracted.expiry_date"
       ],
-      "evaluated_at": "2026-10-23T20:54:45.066Z",
-      "created_at": "2026-10-23T20:54:45.066Z"
+      "evaluated_at": "2026-10-23T21:16:21.104Z",
+      "created_at": "2026-10-23T21:16:21.104Z"
     },
     {
-      "id": "c6c7139f-0103-4f28-a062-88613875610e",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "b01190b8-dd83-4e94-8424-7f79b57ae076",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "b4513bfd-614d-4baa-898d-4a22d032186b",
       "rule_version_id": "fdec5095-c927-44cf-8d95-78262387092f",
       "outcome": "passed",
@@ -10118,12 +10118,12 @@
       },
       "explanation": "All criteria for rule 'AICTE Faculty-to-Student Cadre Ratio' were satisfied.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:45.076Z",
-      "created_at": "2026-10-23T20:54:45.076Z"
+      "evaluated_at": "2026-10-23T21:16:21.115Z",
+      "created_at": "2026-10-23T21:16:21.115Z"
     },
     {
-      "id": "de3f6384-e643-4372-b1b9-c91e96d5ba2f",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "99a91720-70fd-4289-a0da-8cb8277bc8f1",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "7c2b7ac7-40b4-4deb-b2af-14d2be3b913f",
       "rule_version_id": "8290ba3f-42b3-491e-bdae-ab6b9bb7ec43",
       "outcome": "passed",
@@ -10132,12 +10132,12 @@
       },
       "explanation": "All criteria for rule 'Minimum Campus Land Area Compliance' were satisfied.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:45.088Z",
-      "created_at": "2026-10-23T20:54:45.088Z"
+      "evaluated_at": "2026-10-23T21:16:21.124Z",
+      "created_at": "2026-10-23T21:16:21.125Z"
     },
     {
-      "id": "d367bb52-9e3a-4a1c-b77d-ded2d4b13aa7",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "866accca-4453-4d71-a5a9-6e4d48ef874a",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "rule_id": "c1c0c3e5-b54d-431d-8cfd-382ef0f0b673",
       "rule_version_id": "c49fbcbe-35ce-46a3-81f8-bcca58b6ac0a",
       "outcome": "inconclusive",
@@ -10148,12 +10148,12 @@
       "missing_inputs": [
         "extracted.expiry_date"
       ],
-      "evaluated_at": "2026-10-23T20:54:45.100Z",
-      "created_at": "2026-10-23T20:54:45.100Z"
+      "evaluated_at": "2026-10-23T21:16:21.141Z",
+      "created_at": "2026-10-23T21:16:21.141Z"
     },
     {
-      "id": "7764bd13-b876-429d-a223-2a518a621ea2",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "353701c1-5568-4209-bafa-d0a369cf41fe",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "5c3e2a5c-faa9-4867-9767-2cc3f580ff7c",
       "rule_version_id": "de477b9a-4b0b-4bdf-a317-1854ee216bed",
       "outcome": "failed",
@@ -10162,12 +10162,12 @@
       },
       "explanation": "Rule evaluation failed: Observed 5 (Expected: 0). Remediation: Please upload all missing required supporting documents.",
       "missing_inputs": [],
-      "evaluated_at": "2026-10-23T20:54:46.543Z",
-      "created_at": "2026-10-23T20:54:46.543Z"
+      "evaluated_at": "2026-10-23T21:16:22.642Z",
+      "created_at": "2026-10-23T21:16:22.642Z"
     },
     {
-      "id": "e27e1473-4269-478f-b2aa-806b15faedb7",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "8f42e57d-7886-4119-ae99-cfe0554915e7",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "36660ce2-0ae7-42d9-a3a4-169cf1c7b26a",
       "rule_version_id": "9e99fd11-a00b-445b-8e29-9dcbda707d8f",
       "outcome": "inconclusive",
@@ -10178,12 +10178,12 @@
       "missing_inputs": [
         "declared_data.income_annual"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.553Z",
-      "created_at": "2026-10-23T20:54:46.553Z"
+      "evaluated_at": "2026-10-23T21:16:22.653Z",
+      "created_at": "2026-10-23T21:16:22.653Z"
     },
     {
-      "id": "c247897b-704e-45e1-8551-d240ecb9f493",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "3eb5ebfd-9813-47cb-83c1-e41ec5585310",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "00d84833-c85a-41a5-ae41-b3d83e4b1181",
       "rule_version_id": "eec162a6-c86c-4c73-9965-c77e4daec17f",
       "outcome": "inconclusive",
@@ -10194,12 +10194,12 @@
       "missing_inputs": [
         "declared_data.undergrad_gpa"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.562Z",
-      "created_at": "2026-10-23T20:54:46.562Z"
+      "evaluated_at": "2026-10-23T21:16:22.664Z",
+      "created_at": "2026-10-23T21:16:22.664Z"
     },
     {
-      "id": "ca120e86-f080-40ab-a3eb-f23d299cdf3c",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "77151005-fe16-4301-bc66-40fb118fd565",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "7f3b6989-c3a5-4071-9b46-84de972c66f5",
       "rule_version_id": "27aa6bef-31a5-4667-bcd4-4f1c1d436303",
       "outcome": "inconclusive",
@@ -10210,12 +10210,12 @@
       "missing_inputs": [
         "extracted.name"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.574Z",
-      "created_at": "2026-10-23T20:54:46.574Z"
+      "evaluated_at": "2026-10-23T21:16:22.674Z",
+      "created_at": "2026-10-23T21:16:22.674Z"
     },
     {
-      "id": "3632185f-b849-404c-a8ee-20e6965dfd6d",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "9cc3a376-77d5-4acf-bc50-fb8e190e5ad1",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "485f2d4b-d1c7-4741-8a56-b27f9c35822c",
       "rule_version_id": "b17c0c96-a240-41bc-b06d-29327e78505e",
       "outcome": "inconclusive",
@@ -10226,12 +10226,12 @@
       "missing_inputs": [
         "extracted.expiry_date"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.583Z",
-      "created_at": "2026-10-23T20:54:46.583Z"
+      "evaluated_at": "2026-10-23T21:16:22.686Z",
+      "created_at": "2026-10-23T21:16:22.686Z"
     },
     {
-      "id": "0731db91-d7d4-4def-850e-b2a6ac95794d",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "1ccc910c-bc27-47a7-9262-47ed5406a982",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "b4513bfd-614d-4baa-898d-4a22d032186b",
       "rule_version_id": "fdec5095-c927-44cf-8d95-78262387092f",
       "outcome": "inconclusive",
@@ -10242,12 +10242,12 @@
       "missing_inputs": [
         "declared_data.faculty_count_total"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.593Z",
-      "created_at": "2026-10-23T20:54:46.593Z"
+      "evaluated_at": "2026-10-23T21:16:22.697Z",
+      "created_at": "2026-10-23T21:16:22.697Z"
     },
     {
-      "id": "b9baa666-abdb-49c0-aabe-10895cc49584",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "815839f3-351f-4f0c-8b97-7a8e46ccc14a",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "7c2b7ac7-40b4-4deb-b2af-14d2be3b913f",
       "rule_version_id": "8290ba3f-42b3-491e-bdae-ab6b9bb7ec43",
       "outcome": "inconclusive",
@@ -10258,12 +10258,12 @@
       "missing_inputs": [
         "declared_data.land_area_acres"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.603Z",
-      "created_at": "2026-10-23T20:54:46.603Z"
+      "evaluated_at": "2026-10-23T21:16:22.707Z",
+      "created_at": "2026-10-23T21:16:22.707Z"
     },
     {
-      "id": "fdb9bae5-f245-4cac-847f-88133b3e8fcb",
-      "application_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "id": "66efb36d-1504-4190-b9e6-ea0c98689953",
+      "application_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "rule_id": "c1c0c3e5-b54d-431d-8cfd-382ef0f0b673",
       "rule_version_id": "c49fbcbe-35ce-46a3-81f8-bcca58b6ac0a",
       "outcome": "inconclusive",
@@ -10274,8 +10274,8 @@
       "missing_inputs": [
         "extracted.expiry_date"
       ],
-      "evaluated_at": "2026-10-23T20:54:46.613Z",
-      "created_at": "2026-10-23T20:54:46.613Z"
+      "evaluated_at": "2026-10-23T21:16:22.718Z",
+      "created_at": "2026-10-23T21:16:22.718Z"
     }
   ],
   "review_decisions": [
@@ -10424,8 +10424,8 @@
       "created_at": "2026-10-23T20:44:03.946Z"
     },
     {
-      "id": "008c1b35-67f5-4116-8920-ec7eda541288",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "c9b80ace-be10-4057-a308-78af33b9ab5b",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "reviewer_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "action": "approve",
       "reason": "All statutory qualifications, income ceiling checks, and identity requirements verified and approved.",
@@ -10433,11 +10433,11 @@
       "requires_physical_inspection": false,
       "inspection_committee_type": "NONE",
       "infrastructure_observations": "",
-      "created_at": "2026-10-23T20:54:43.243Z"
+      "created_at": "2026-10-23T21:16:19.205Z"
     },
     {
-      "id": "054103e1-a7b5-480e-8e92-868c61d4ea54",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "id": "3830e165-5e6a-4173-bbec-18c89ad4d8d7",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "reviewer_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "action": "approve",
       "reason": "Academic credentials verified. Physical campus facilities referred to Expert Visit Committee.",
@@ -10445,7 +10445,7 @@
       "requires_physical_inspection": true,
       "inspection_committee_type": "EVC",
       "infrastructure_observations": "Computer center carpet area and fire exits require on-site dimensional verification.",
-      "created_at": "2026-10-23T20:54:47.634Z"
+      "created_at": "2026-10-23T21:16:23.771Z"
     }
   ],
   "review_comments": [
@@ -10531,13 +10531,13 @@
       "created_at": "2026-10-23T20:43:57.851Z"
     },
     {
-      "id": "703397d7-fb2b-491b-909c-b3e370c4b497",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "id": "96db02f4-096b-42aa-b138-0aa7f8ae0ff9",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "reviewer_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "reviewer_name": "Priya Nair (Verification Officer)",
       "comment": "Document evidence verified against digital ledger. Discrepancies addressed.",
       "is_internal": true,
-      "created_at": "2026-10-23T20:54:43.198Z"
+      "created_at": "2026-10-23T21:16:19.163Z"
     }
   ],
   "reports": [
@@ -10763,13 +10763,13 @@
       "created_at": "2026-10-23T20:44:07.073Z"
     },
     {
-      "id": "82a266f4-bd1f-42f8-97ad-d3e51a1187dd",
-      "application_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
-      "report_reference": "VR-VX-2026-3436-883258",
-      "file_path": "D:\\ValidX-AI\\backend\\data\\reports\\VR-VX-2026-3436-883258.pdf",
-      "sha256_hash": "d86ba522fc03aa3ad26a084f92440dc041c7adb72fd9a74373f882377967e8ac",
+      "id": "ca2f930d-b37a-433d-b632-017874d15382",
+      "application_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+      "report_reference": "VR-VX-2026-9234-179220",
+      "file_path": "D:\\ValidX-AI\\backend\\data\\reports\\VR-VX-2026-9234-179220.pdf",
+      "sha256_hash": "6aa6748d9d9b7863dbfe3ff4f5a0554afc52f1316529e401394772aed868a34b",
       "summary": {
-        "application_reference": "VX-2026-3436",
+        "application_reference": "VX-2026-9234",
         "priority": "high",
         "checks_count": 5,
         "discrepancies_count": 2,
@@ -10777,16 +10777,16 @@
         "decision": "approve"
       },
       "generated_by": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
-      "created_at": "2026-10-23T20:54:44.313Z"
+      "created_at": "2026-10-23T21:16:20.400Z"
     },
     {
-      "id": "c6fb9028-698d-41ed-9f4e-cafebb3b56e4",
-      "application_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
-      "report_reference": "VR-VX-2026-9300-887644",
-      "file_path": "D:\\ValidX-AI\\backend\\data\\reports\\VR-VX-2026-9300-887644.pdf",
-      "sha256_hash": "58bd5ffea4e5e38e238ed9f2807e3173a093abe7583f77e760fe59e3344e6f27",
+      "id": "2103fc3e-1718-40a9-b0e7-f2efdc40c90e",
+      "application_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
+      "report_reference": "VR-VX-2026-2209-183784",
+      "file_path": "D:\\ValidX-AI\\backend\\data\\reports\\VR-VX-2026-2209-183784.pdf",
+      "sha256_hash": "68988d8d76ff322b6e4ca0840c31431fe034d62966899594d680ac35f632a837",
       "summary": {
-        "application_reference": "VX-2026-9300",
+        "application_reference": "VX-2026-2209",
         "priority": "high",
         "checks_count": 7,
         "discrepancies_count": 6,
@@ -10794,7 +10794,7 @@
         "decision": "approve"
       },
       "generated_by": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
-      "created_at": "2026-10-23T20:54:48.422Z"
+      "created_at": "2026-10-23T21:16:24.994Z"
     }
   ],
   "notifications": [
@@ -11400,102 +11400,102 @@
       "created_at": "2026-10-23T20:44:07.084Z"
     },
     {
-      "id": "219e6c2e-f6fe-4e02-ae82-7c5f7596757c",
+      "id": "66d9ddd9-c6d9-4f74-87a3-c308d5697531",
       "user_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "title": "Application Submitted",
-      "message": "Your application (VX-2026-3436) has been submitted and is currently being verified by the automated engine.",
+      "message": "Your application (VX-2026-9234) has been submitted and is currently being verified by the automated engine.",
       "type": "info",
       "is_read": false,
       "metadata": {
-        "applicationId": "006152f8-ead6-453e-adea-732ce3b01ec2"
+        "applicationId": "6a005821-c2bc-4b7f-b5e0-ec6c76237642"
       },
-      "created_at": "2026-10-23T20:54:42.037Z"
+      "created_at": "2026-10-23T21:16:17.853Z"
     },
     {
-      "id": "79753ecd-9803-4b47-bdcf-bf93b35c66e6",
+      "id": "37c062ad-6b0a-47d1-a32c-96f7f91a76bd",
       "user_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "title": "Verification Complete - Under Review",
-      "message": "Automated audit completed for application VX-2026-3436. Verification priority: HIGH. Review officer assigned.",
+      "message": "Automated audit completed for application VX-2026-9234. Verification priority: HIGH. Review officer assigned.",
       "type": "warning",
       "is_read": false,
       "metadata": {
-        "applicationId": "006152f8-ead6-453e-adea-732ce3b01ec2"
+        "applicationId": "6a005821-c2bc-4b7f-b5e0-ec6c76237642"
       },
-      "created_at": "2026-10-23T20:54:42.302Z"
+      "created_at": "2026-10-23T21:16:18.275Z"
     },
     {
-      "id": "73698c12-dacd-497f-a6ec-380594f20880",
+      "id": "fff28dd8-12ea-4df3-a06a-ee62d7104beb",
       "user_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "title": "Application Approved!",
-      "message": "Congratulations! Your application (VX-2026-3436) has been officially verified and approved. An official digital verification report has been generated.",
+      "message": "Congratulations! Your application (VX-2026-9234) has been officially verified and approved. An official digital verification report has been generated.",
       "type": "success",
       "is_read": false,
       "metadata": {
-        "applicationId": "006152f8-ead6-453e-adea-732ce3b01ec2",
-        "reportId": "82a266f4-bd1f-42f8-97ad-d3e51a1187dd"
+        "applicationId": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
+        "reportId": "ca2f930d-b37a-433d-b632-017874d15382"
       },
-      "created_at": "2026-10-23T20:54:44.322Z"
+      "created_at": "2026-10-23T21:16:20.416Z"
     },
     {
-      "id": "e4924a08-7741-416c-add0-bb9a8fa01a6b",
-      "user_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "9452dbf2-13b6-41f8-b2f3-b4ae2f5299e2",
+      "user_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "title": "Application Submitted",
-      "message": "Your application (VX-2026-9300) has been submitted and is currently being verified by the automated engine.",
+      "message": "Your application (VX-2026-2209) has been submitted and is currently being verified by the automated engine.",
       "type": "info",
       "is_read": false,
       "metadata": {
-        "applicationId": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1"
+        "applicationId": "4e2a0f1c-1522-41b3-8c19-624c22d78baa"
       },
-      "created_at": "2026-10-23T20:54:44.817Z"
+      "created_at": "2026-10-23T21:16:20.825Z"
     },
     {
-      "id": "96bc519c-cdc5-4ee9-99f1-113ead229f99",
-      "user_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "bdceeb0e-1c46-48d1-9e35-45bd0515c35a",
+      "user_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "title": "Verification Complete - Under Review",
-      "message": "Automated audit completed for application VX-2026-9300. Verification priority: HIGH. Review officer assigned.",
+      "message": "Automated audit completed for application VX-2026-2209. Verification priority: HIGH. Review officer assigned.",
       "type": "warning",
       "is_read": false,
       "metadata": {
-        "applicationId": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1"
+        "applicationId": "4e2a0f1c-1522-41b3-8c19-624c22d78baa"
       },
-      "created_at": "2026-10-23T20:54:45.129Z"
+      "created_at": "2026-10-23T21:16:21.173Z"
     },
     {
-      "id": "742be59b-b2ea-49ca-92fe-55d7826612c3",
-      "user_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "f2bd00f7-5969-4f5c-b349-1001e93e7b8f",
+      "user_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "title": "Application Submitted",
-      "message": "Your application (VX-2026-4117) has been submitted and is currently being verified by the automated engine.",
+      "message": "Your application (VX-2026-2812) has been submitted and is currently being verified by the automated engine.",
       "type": "info",
       "is_read": false,
       "metadata": {
-        "applicationId": "48853a8c-034b-48a1-a6e9-e448eec62c44"
+        "applicationId": "b567fcc7-4089-4aa1-8259-d67049a1c008"
       },
-      "created_at": "2026-10-23T20:54:46.246Z"
+      "created_at": "2026-10-23T21:16:22.315Z"
     },
     {
-      "id": "7575869a-2797-4067-b50a-4b747661203a",
-      "user_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "33986b9f-bbc5-4b02-861a-7bb0d04cc0f4",
+      "user_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "title": "Verification Complete - Under Review",
-      "message": "Automated audit completed for application VX-2026-4117. Verification priority: HIGH. Review officer assigned.",
+      "message": "Automated audit completed for application VX-2026-2812. Verification priority: HIGH. Review officer assigned.",
       "type": "warning",
       "is_read": false,
       "metadata": {
-        "applicationId": "48853a8c-034b-48a1-a6e9-e448eec62c44"
+        "applicationId": "b567fcc7-4089-4aa1-8259-d67049a1c008"
       },
-      "created_at": "2026-10-23T20:54:46.646Z"
+      "created_at": "2026-10-23T21:16:22.759Z"
     },
     {
-      "id": "86c28af5-e652-4d97-a04d-e981716b98e0",
-      "user_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "44fa07b3-8c06-461a-8f1b-3ad42001e372",
+      "user_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "title": "Application Approved!",
-      "message": "Congratulations! Your application (VX-2026-9300) has been officially verified and approved. An official digital verification report has been generated.",
+      "message": "Congratulations! Your application (VX-2026-2209) has been officially verified and approved. An official digital verification report has been generated.",
       "type": "success",
       "is_read": false,
       "metadata": {
-        "applicationId": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
-        "reportId": "c6fb9028-698d-41ed-9f4e-cafebb3b56e4"
+        "applicationId": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
+        "reportId": "2103fc3e-1718-40a9-b0e7-f2efdc40c90e"
       },
-      "created_at": "2026-10-23T20:54:48.433Z"
+      "created_at": "2026-10-23T21:16:25.007Z"
     }
   ],
   "audit_events": [
@@ -15621,7 +15621,35 @@
       "created_at": "2026-10-23T20:44:07.143Z"
     },
     {
-      "id": "9cd68d0b-1f59-4166-97e3-b814f9ef7a0a",
+      "id": "6b429252-741d-4dc8-8795-d543a6bee0c6",
+      "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
+      "actor_role": "officer",
+      "action": "LOGIN_SUCCESS",
+      "resource_type": "USER",
+      "resource_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
+      "outcome": "success",
+      "ip_address": "::1",
+      "correlation_id": "e705913b-69eb-4860-ab6e-a3fd6b6f102b",
+      "metadata": {},
+      "timestamp": "2026-10-23T21:10:22.786Z",
+      "created_at": "2026-10-23T21:10:22.790Z"
+    },
+    {
+      "id": "2846cb21-a789-4008-8779-8f783bf44694",
+      "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
+      "actor_role": "officer",
+      "action": "LOGIN_SUCCESS",
+      "resource_type": "USER",
+      "resource_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
+      "outcome": "success",
+      "ip_address": "::1",
+      "correlation_id": "c33a51eb-f9b9-41de-858f-cf89c035322c",
+      "metadata": {},
+      "timestamp": "2026-10-23T21:12:33.338Z",
+      "created_at": "2026-10-23T21:12:33.338Z"
+    },
+    {
+      "id": "924a27b0-d6ab-4a59-9d7c-5e518ba25ea5",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "LOGIN_SUCCESS",
@@ -15629,13 +15657,13 @@
       "resource_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "3abafa81-ce19-428c-81f0-69c1e92e2534",
+      "correlation_id": "c24f8e23-d975-49d4-a653-5c543677e6ab",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:38.861Z",
-      "created_at": "2026-10-23T20:54:38.861Z"
+      "timestamp": "2026-10-23T21:16:15.041Z",
+      "created_at": "2026-10-23T21:16:15.041Z"
     },
     {
-      "id": "9685e63b-9e3b-4cb5-a817-e493ab9c1053",
+      "id": "f0c70bc0-c42e-4bf7-9d60-857b0d62f4ec",
       "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "actor_role": "officer",
       "action": "LOGIN_SUCCESS",
@@ -15643,13 +15671,13 @@
       "resource_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "b5b5c397-07e8-4be7-8f4a-41bca7724e2e",
+      "correlation_id": "e530036d-9c66-4fcc-851e-e08470e0b9de",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.020Z",
-      "created_at": "2026-10-23T20:54:39.020Z"
+      "timestamp": "2026-10-23T21:16:15.211Z",
+      "created_at": "2026-10-23T21:16:15.211Z"
     },
     {
-      "id": "145c4dc1-1ecb-48a0-83d9-b0bc15af0d8b",
+      "id": "0ef169d1-3bac-4da0-ac42-e23b371a63fb",
       "actor_id": "4acc8638-d124-45d4-a5cf-81333bdef085",
       "actor_role": "compliance",
       "action": "LOGIN_SUCCESS",
@@ -15657,13 +15685,13 @@
       "resource_id": "4acc8638-d124-45d4-a5cf-81333bdef085",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "12c856eb-cb86-4e24-a913-52ac4983b117",
+      "correlation_id": "c177e773-cfc0-491c-8ad6-7e28deb29900",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.178Z",
-      "created_at": "2026-10-23T20:54:39.178Z"
+      "timestamp": "2026-10-23T21:16:15.403Z",
+      "created_at": "2026-10-23T21:16:15.403Z"
     },
     {
-      "id": "96b88a81-edbe-45c2-b89c-7c0a25c92893",
+      "id": "c407027f-665d-42dd-95cb-e0ec7a225bf8",
       "actor_id": "efd63002-7015-41f1-a18e-f21f32f39812",
       "actor_role": "admin",
       "action": "LOGIN_SUCCESS",
@@ -15671,13 +15699,13 @@
       "resource_id": "efd63002-7015-41f1-a18e-f21f32f39812",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "054d697a-fee3-4407-9c17-cf76cdf1d180",
+      "correlation_id": "51247216-4a2f-40f6-b99c-a2e7896ef913",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.340Z",
-      "created_at": "2026-10-23T20:54:39.340Z"
+      "timestamp": "2026-10-23T21:16:15.655Z",
+      "created_at": "2026-10-23T21:16:15.655Z"
     },
     {
-      "id": "9afe26e8-5ecc-4f17-9543-89a59b795931",
+      "id": "ecac7987-c307-4df8-84e5-80fc3c90af9a",
       "actor_id": "54e039c6-46b2-4eca-a2a8-9db5fdf82935",
       "actor_role": "auditor",
       "action": "LOGIN_SUCCESS",
@@ -15685,13 +15713,13 @@
       "resource_id": "54e039c6-46b2-4eca-a2a8-9db5fdf82935",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "f7ef94d4-ec87-449d-934e-ebb3c490bdc9",
+      "correlation_id": "70ec1ced-eb05-43f2-8753-0705f45818cf",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.497Z",
-      "created_at": "2026-10-23T20:54:39.497Z"
+      "timestamp": "2026-10-23T21:16:15.934Z",
+      "created_at": "2026-10-23T21:16:15.934Z"
     },
     {
-      "id": "4bb82760-8916-4dea-a9f0-0b276a505bf4",
+      "id": "2940b31d-f713-4166-a79e-4cc1dec82baa",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "LOGIN_FAILED",
@@ -15699,41 +15727,41 @@
       "resource_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "outcome": "failure",
       "ip_address": "127.0.0.1",
-      "correlation_id": "5b64e3d1-55d1-4012-a5d7-7c7725cca4ad",
+      "correlation_id": "d5f2f79f-9bf0-42a2-b3dd-a66f5ebf9b44",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.651Z",
-      "created_at": "2026-10-23T20:54:39.651Z"
+      "timestamp": "2026-10-23T21:16:16.222Z",
+      "created_at": "2026-10-23T21:16:16.222Z"
     },
     {
-      "id": "fca1ef47-65be-441d-a4e3-dbb513322547",
+      "id": "9e919681-0d65-4a33-8e22-a3f1b6472f7e",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "APPLICATION_CREATED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "d0b76815-bb4a-41bc-8cb5-7042cc7e78b6",
+      "correlation_id": "e102fc25-3c68-4088-81b9-4037336362c3",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.687Z",
-      "created_at": "2026-10-23T20:54:39.687Z"
+      "timestamp": "2026-10-23T21:16:16.286Z",
+      "created_at": "2026-10-23T21:16:16.286Z"
     },
     {
-      "id": "864471e8-577c-469e-baf9-1abf7aeeb95a",
+      "id": "98bcd773-bda9-43c0-bb61-c21e694b5b9a",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "APPLICATION_DRAFT_UPDATED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "d3ffb573-683b-434c-96f2-5f0348bf5113",
+      "correlation_id": "d63204b5-daf5-4da0-a852-fe3fbf58a0e3",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:39.722Z",
-      "created_at": "2026-10-23T20:54:39.722Z"
+      "timestamp": "2026-10-23T21:16:16.353Z",
+      "created_at": "2026-10-23T21:16:16.353Z"
     },
     {
-      "id": "d18d643d-364e-42a6-a00a-e9b9696bc52c",
+      "id": "f31d6459-f8f0-45b5-8187-3f6f645c3f63",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "ACCESS_DENIED",
@@ -15741,7 +15769,7 @@
       "resource_id": "/api/v1/reviews/queue",
       "outcome": "denied",
       "ip_address": "127.0.0.1",
-      "correlation_id": "dd173b81-aa90-4406-a431-f04666367600",
+      "correlation_id": "a9043969-ca86-4591-9cc5-6508cc42f22a",
       "metadata": {
         "requiredRoles": [
           "officer",
@@ -15749,94 +15777,94 @@
           "auditor"
         ]
       },
-      "timestamp": "2026-10-23T20:54:39.740Z",
-      "created_at": "2026-10-23T20:54:39.740Z"
+      "timestamp": "2026-10-23T21:16:16.389Z",
+      "created_at": "2026-10-23T21:16:16.389Z"
     },
     {
-      "id": "5f3d2889-e4d8-4fb9-b1ed-7729b467f545",
+      "id": "ee9ee730-3cb4-4115-8ddc-669b92e4cfa1",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOAD_INVALID_SIGNATURE",
       "resource_type": "DOCUMENT",
       "outcome": "failure",
       "ip_address": "127.0.0.1",
-      "correlation_id": "b4075faa-cbed-440e-8790-623281d2bae9",
+      "correlation_id": "fa9cef95-0bee-4c3a-930b-0a72604f9962",
       "metadata": {
         "filename": "fake_document.pdf",
         "mimetype": "application/pdf"
       },
-      "timestamp": "2026-10-23T20:54:39.770Z",
-      "created_at": "2026-10-23T20:54:39.770Z"
+      "timestamp": "2026-10-23T21:16:16.466Z",
+      "created_at": "2026-10-23T21:16:16.466Z"
     },
     {
-      "id": "a1af71dd-7457-43b5-b2b2-484ecb8f32ad",
+      "id": "d311d68e-58eb-4de5-853e-eebb3774c966",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "4bf6d3c3-0803-447b-93e0-9f1c714efc47",
+      "resource_id": "0f3f974f-d0f7-44f3-aee8-19bbb45e6d92",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "c1f6e1ff-6804-409a-a9cc-f21c171d97a0",
+      "correlation_id": "ef480859-de81-4cd8-98a5-d02cac193604",
       "metadata": {
         "filename": "national_id_card.pdf",
         "sha256": "e6203ca9945b045a5b0f9158f30af8b3f84234eda7c99f0ecb3835bb461243f9",
         "sizeBytes": 507
       },
-      "timestamp": "2026-10-23T20:54:41.967Z",
-      "created_at": "2026-10-23T20:54:41.967Z"
+      "timestamp": "2026-10-23T21:16:17.743Z",
+      "created_at": "2026-10-23T21:16:17.743Z"
     },
     {
-      "id": "3c6430bf-a0fe-46f2-bea5-9c5676f2d26e",
+      "id": "30369545-a85f-4105-841a-c060991e8de5",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "APPLICATION_SUBMITTED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "05fd1253-0600-4d29-bca4-260fbccd2198",
+      "correlation_id": "73ce415b-fc65-4c75-9a27-26ed938bddd8",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:42.027Z",
-      "created_at": "2026-10-23T20:54:42.027Z"
+      "timestamp": "2026-10-23T21:16:17.831Z",
+      "created_at": "2026-10-23T21:16:17.831Z"
     },
     {
-      "id": "1e8aecd4-80ce-45a4-b67a-208f8373b9fb",
+      "id": "f415515f-f168-400e-abde-ef3ecf53d4ee",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "failure",
-      "correlation_id": "632c2b32-86ce-42ae-8eaa-7b252d99ca12",
+      "correlation_id": "2b529e9d-5958-4805-a365-181d29924e97",
       "metadata": {
         "authority_code": "AICTE_CENTRAL_REGISTRY",
         "status": "not_configured",
         "identifier": "1-3324567891"
       },
-      "timestamp": "2026-10-23T20:54:42.146Z",
-      "created_at": "2026-10-23T20:54:42.146Z"
+      "timestamp": "2026-10-23T21:16:18.105Z",
+      "created_at": "2026-10-23T21:16:18.105Z"
     },
     {
-      "id": "06e4f358-9238-4f28-93bd-f9c4441eddb1",
+      "id": "ac97d733-31f8-48a0-a693-59958d590df7",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
-      "correlation_id": "c0870c2f-123a-4b92-b8f5-5f151eeab5f7",
+      "correlation_id": "f5ca49a7-0e4c-4fe7-8491-efb614100923",
       "metadata": {
         "authority_code": "DIGILOCKER_NAD",
         "status": "verified",
         "identifier": "e6203ca9945b045a"
       },
-      "timestamp": "2026-10-23T20:54:42.167Z",
-      "created_at": "2026-10-23T20:54:42.167Z"
+      "timestamp": "2026-10-23T21:16:18.139Z",
+      "created_at": "2026-10-23T21:16:18.139Z"
     },
     {
-      "id": "c1d01aec-38df-4f94-9b69-e37890015be0",
+      "id": "27bec1c5-33cc-4300-980d-2bb3d66a3435",
       "action": "VERIFICATION_PIPELINE_COMPLETED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
-      "correlation_id": "7b9ebafd-0eac-4633-ae75-c0c7f3f61c8f",
+      "correlation_id": "18e8bb83-8a0f-48d4-989f-8b311031b1b7",
       "metadata": {
         "priority": "high",
         "checks_count": 5,
@@ -15845,157 +15873,157 @@
         "authority_checks_count": 2,
         "evaluations_count": 8
       },
-      "timestamp": "2026-10-23T20:54:42.292Z",
-      "created_at": "2026-10-23T20:54:42.292Z"
+      "timestamp": "2026-10-23T21:16:18.264Z",
+      "created_at": "2026-10-23T21:16:18.264Z"
     },
     {
-      "id": "08420c56-7c35-4dbd-abfb-b4802079dada",
+      "id": "a0253543-9106-43fd-b11c-510e5666ae32",
       "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "actor_role": "officer",
       "action": "APPLICATION_ASSIGNED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "03817d51-8329-458c-85ba-04c6162528cd",
+      "correlation_id": "6c4b68f9-54b0-48ec-bdf7-05ab68f69c40",
       "metadata": {
         "assigned_to": "e5a501c6-1d4e-467d-948f-ccf387c814e4"
       },
-      "timestamp": "2026-10-23T20:54:43.178Z",
-      "created_at": "2026-10-23T20:54:43.178Z"
+      "timestamp": "2026-10-23T21:16:19.139Z",
+      "created_at": "2026-10-23T21:16:19.139Z"
     },
     {
-      "id": "1b0b9187-07fd-46b5-9779-7f6f1aa98b99",
+      "id": "0a59f5c8-76f5-4d20-9f0e-2f75270a1be8",
       "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "actor_role": "officer",
       "action": "COMMENT_ADDED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "b98f7d08-f325-4b29-9f09-dcf498ea8760",
+      "correlation_id": "21b84072-bed2-41cd-800a-286bb6c71b1a",
       "metadata": {
         "is_internal": true
       },
-      "timestamp": "2026-10-23T20:54:43.209Z",
-      "created_at": "2026-10-23T20:54:43.209Z"
+      "timestamp": "2026-10-23T21:16:19.174Z",
+      "created_at": "2026-10-23T21:16:19.174Z"
     },
     {
-      "id": "b1fd8f13-12bc-4127-82e1-b6486085b278",
+      "id": "774c6dbe-62a4-462f-9817-6f0411fe3771",
       "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "actor_role": "officer",
       "action": "APPLICATION_APPROVED",
       "resource_type": "APPLICATION",
-      "resource_id": "006152f8-ead6-453e-adea-732ce3b01ec2",
+      "resource_id": "6a005821-c2bc-4b7f-b5e0-ec6c76237642",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "db64365a-9d9e-4718-94a5-b3a6f3317832",
+      "correlation_id": "521122e3-0972-4002-bcbc-fbbfc12eaa5d",
       "metadata": {
         "reason": "All statutory qualifications, income ceiling checks, and identity requirements verified and approved.",
-        "reportId": "82a266f4-bd1f-42f8-97ad-d3e51a1187dd",
+        "reportId": "ca2f930d-b37a-433d-b632-017874d15382",
         "requires_physical_inspection": false,
         "inspection_committee_type": "NONE"
       },
-      "timestamp": "2026-10-23T20:54:44.333Z",
-      "created_at": "2026-10-23T20:54:44.333Z"
+      "timestamp": "2026-10-23T21:16:20.428Z",
+      "created_at": "2026-10-23T21:16:20.428Z"
     },
     {
-      "id": "e1bf8ee3-b85b-49d7-bed2-6924a0fb63ff",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "934c04b7-8cf6-4820-99cc-f312d02009ba",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "USER_REGISTERED",
       "resource_type": "USER",
-      "resource_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "resource_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "710d1eb6-ac18-4b9b-9200-918e75f701eb",
+      "correlation_id": "4c120c78-1898-41f9-96ca-6d72791d2a0e",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:44.560Z",
-      "created_at": "2026-10-23T20:54:44.560Z"
+      "timestamp": "2026-10-23T21:16:20.673Z",
+      "created_at": "2026-10-23T21:16:20.673Z"
     },
     {
-      "id": "13314adc-7a78-431a-943b-bcc43290750b",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "0d3f8b15-3c57-44e5-8419-a74a40a59a3c",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "APPLICATION_CREATED",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "fbc1083e-44c3-4200-9cf3-1427617cf8d9",
+      "correlation_id": "6cf46a25-f7e7-4be9-a565-1db705050cba",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:44.587Z",
-      "created_at": "2026-10-23T20:54:44.587Z"
+      "timestamp": "2026-10-23T21:16:20.709Z",
+      "created_at": "2026-10-23T21:16:20.709Z"
     },
     {
-      "id": "b411cd37-bc71-45eb-9649-7c115336af5a",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "48b6f23b-2144-4446-b843-d6cd2256b6d5",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "01b6491d-e12b-4ae7-9b9e-77dcf16ade13",
+      "resource_id": "59a6d291-a66d-46e0-8ae1-78e99a573957",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "b9583479-2fc5-4717-a109-a4943b871ae9",
+      "correlation_id": "7ef5a812-3a97-499e-b9ce-cbe0db619430",
       "metadata": {
         "filename": "aicte_previous_eoa.pdf",
         "sha256": "a4ffff03ac41c05601000e8187ddf6712f267a5579572b757d7caf6145d72cc7",
         "sizeBytes": 575
       },
-      "timestamp": "2026-10-23T20:54:44.781Z",
-      "created_at": "2026-10-23T20:54:44.781Z"
+      "timestamp": "2026-10-23T21:16:20.779Z",
+      "created_at": "2026-10-23T21:16:20.779Z"
     },
     {
-      "id": "501dad7a-d301-4524-97d4-1e65c2d1850a",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "498262bb-bb55-4f42-b7b0-e1cbf8b47d7c",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "APPLICATION_SUBMITTED",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "cab474df-2894-40b5-b6ab-0bcc9958cecf",
+      "correlation_id": "7bacf5c6-0fb7-4023-bf37-6761c8025cd5",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:44.808Z",
-      "created_at": "2026-10-23T20:54:44.808Z"
+      "timestamp": "2026-10-23T21:16:20.814Z",
+      "created_at": "2026-10-23T21:16:20.814Z"
     },
     {
-      "id": "0b523786-f15c-4c8c-9678-2162356f6ab7",
+      "id": "68cd498d-86c2-4df7-bb33-ae94577152d7",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "failure",
-      "correlation_id": "fb7f8ca6-702f-43b7-b153-d4280912b7ae",
+      "correlation_id": "235aab8c-f239-4419-8b5d-e6a99f369345",
       "metadata": {
         "authority_code": "AICTE_CENTRAL_REGISTRY",
         "status": "not_configured",
         "identifier": "1-3324567891"
       },
-      "timestamp": "2026-10-23T20:54:44.987Z",
-      "created_at": "2026-10-23T20:54:44.987Z"
+      "timestamp": "2026-10-23T21:16:21.018Z",
+      "created_at": "2026-10-23T21:16:21.018Z"
     },
     {
-      "id": "5f4cc49d-7b3f-47ba-990a-cc2f125c94f9",
+      "id": "2ebd4dd8-f55d-4e64-a81b-bbe248c17508",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "success",
-      "correlation_id": "75d9f8a7-e7e3-42c5-94de-7f1862f14938",
+      "correlation_id": "d48351b0-a9b5-48c7-93b7-62af238a005d",
       "metadata": {
         "authority_code": "STATE_TECH_BOARD",
         "status": "verified",
         "identifier": "Shivaji University"
       },
-      "timestamp": "2026-10-23T20:54:45.007Z",
-      "created_at": "2026-10-23T20:54:45.007Z"
+      "timestamp": "2026-10-23T21:16:21.038Z",
+      "created_at": "2026-10-23T21:16:21.039Z"
     },
     {
-      "id": "c2e5eec8-5697-4586-b133-839edd21599b",
+      "id": "728e92b2-dc85-4cc0-89eb-6e872f9fbc36",
       "action": "VERIFICATION_PIPELINE_COMPLETED",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "success",
-      "correlation_id": "dde1f8b9-e418-4e65-825b-fd7eeee8ad7b",
+      "correlation_id": "e4c0b407-f3cc-4571-b787-535a98294a7e",
       "metadata": {
         "priority": "high",
         "checks_count": 7,
@@ -16004,146 +16032,146 @@
         "authority_checks_count": 2,
         "evaluations_count": 8
       },
-      "timestamp": "2026-10-23T20:54:45.119Z",
-      "created_at": "2026-10-23T20:54:45.119Z"
+      "timestamp": "2026-10-23T21:16:21.162Z",
+      "created_at": "2026-10-23T21:16:21.162Z"
     },
     {
-      "id": "9fca0771-ba76-4f8b-8d88-d7781639e9a9",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "2b3ee043-0bc7-4860-8a25-1fffe64965f4",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "c4f238f1-57c8-44f1-a0e7-8b69b35ff1b8",
+      "resource_id": "a39ad1d3-05f0-4100-b2ad-96757295b940",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "afcfddc2-9151-4eb9-8986-28675208fed7",
+      "correlation_id": "1977ed6e-97f3-4619-bf3b-aba2b673321a",
       "metadata": {
         "filename": "expired_fire_clearance.pdf",
         "sha256": "ca7b576bfc424863cb8c90b9e74930d2a3249e46ad3a4487f9fbf11ed09241bb",
         "sizeBytes": 517
       },
-      "timestamp": "2026-10-23T20:54:46.024Z",
-      "created_at": "2026-10-23T20:54:46.025Z"
+      "timestamp": "2026-10-23T21:16:22.081Z",
+      "created_at": "2026-10-23T21:16:22.081Z"
     },
     {
-      "id": "af9aedb5-8697-4404-9a6b-92ca10bc6ce0",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "7ad84bf2-8ead-42c4-8494-bf2e68d713dc",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "d73b049f-7d51-49a9-97bc-c0ef48c1c88e",
+      "resource_id": "18279558-bfc9-4916-bdca-a86a0c5ad1f7",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "b4cbc599-19aa-4e06-b72d-579b56923ac6",
+      "correlation_id": "eaeb2f75-29d0-4df3-b4c9-d82f06f2bd6d",
       "metadata": {
         "filename": "land_affidavit_mismatched.pdf",
         "sha256": "93677391a34ff2ba9311ec145d4d8b82ee303955dda0b5a52487cc5071c608ea",
         "sizeBytes": 497
       },
-      "timestamp": "2026-10-23T20:54:46.087Z",
-      "created_at": "2026-10-23T20:54:46.087Z"
+      "timestamp": "2026-10-23T21:16:22.153Z",
+      "created_at": "2026-10-23T21:16:22.153Z"
     },
     {
-      "id": "4d34431d-3ae9-420e-9514-3c775f4773e3",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "5d3b2c41-ff70-4ff6-bbdf-14d1d1768262",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "APPLICATION_CREATED",
       "resource_type": "APPLICATION",
-      "resource_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "resource_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "0c3d8178-bfb8-4f08-8a98-d44e99b9e142",
+      "correlation_id": "81f80134-9b83-4d7d-a2a0-5374f0e4c09f",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:46.116Z",
-      "created_at": "2026-10-23T20:54:46.116Z"
+      "timestamp": "2026-10-23T21:16:22.184Z",
+      "created_at": "2026-10-23T21:16:22.184Z"
     },
     {
-      "id": "4dd496a5-c7ec-4f27-9fbe-5259ce6df230",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "8a299b11-fa74-4888-a731-eccb7587dbae",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "49bbb7ed-3e9a-41de-8dd7-e0c6705ecd5b",
+      "resource_id": "0a9972ef-f7bd-4ff2-b8e3-5e2e630b4829",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "5b433023-d7f2-40e1-8d8e-77b8dce93e9a",
+      "correlation_id": "717aad3d-c3b9-43a7-8dea-f3255cb0c807",
       "metadata": {
         "filename": "doc1.pdf",
         "sha256": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de",
         "sizeBytes": 499
       },
-      "timestamp": "2026-10-23T20:54:46.164Z",
-      "created_at": "2026-10-23T20:54:46.164Z"
+      "timestamp": "2026-10-23T21:16:22.231Z",
+      "created_at": "2026-10-23T21:16:22.231Z"
     },
     {
-      "id": "1c307bf4-d03c-49b2-ab5e-6b7fb4227bec",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "c64665d7-0ec7-432a-a53a-3638e500c04b",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "d6d02c10-67bf-4511-9553-7298d8bfb4c8",
+      "resource_id": "346bb728-5fff-47e4-b746-0e3b8fe66cf2",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "5eea2bda-4933-4d30-a6af-0b8c2850f3f2",
+      "correlation_id": "769d97c5-d452-4d08-993c-3e5fdb660f4f",
       "metadata": {
         "filename": "doc2.pdf",
         "sha256": "7de6774c8fd4544e7229dd7c86bb98365ab64168fb3fbda319c685f22243c9de",
         "sizeBytes": 499
       },
-      "timestamp": "2026-10-23T20:54:46.207Z",
-      "created_at": "2026-10-23T20:54:46.207Z"
+      "timestamp": "2026-10-23T21:16:22.277Z",
+      "created_at": "2026-10-23T21:16:22.277Z"
     },
     {
-      "id": "b8382812-4e41-4dcc-b7c4-448bfc6271ee",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "c9a62bc0-f80f-4e11-8f7f-bd92183d2feb",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "APPLICATION_SUBMITTED",
       "resource_type": "APPLICATION",
-      "resource_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "resource_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "50675072-21d7-4d3e-937f-7b5bb3fc8ff3",
+      "correlation_id": "a4321958-2987-4383-8dc3-bc751b60e34f",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:46.236Z",
-      "created_at": "2026-10-23T20:54:46.236Z"
+      "timestamp": "2026-10-23T21:16:22.304Z",
+      "created_at": "2026-10-23T21:16:22.304Z"
     },
     {
-      "id": "a529ca3a-6d01-41e4-ad3c-f68007d3a5eb",
+      "id": "af473afd-1c2f-41e0-ba30-cac47ac1b6cf",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "resource_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "outcome": "failure",
-      "correlation_id": "bcd6b38d-2d48-4b9b-9cab-56e930dda9f1",
+      "correlation_id": "a1e83ea3-8259-4d1d-b8e2-f358764d8e2f",
       "metadata": {
         "authority_code": "AICTE_CENTRAL_REGISTRY",
         "status": "not_configured",
         "identifier": "1-3324567891"
       },
-      "timestamp": "2026-10-23T20:54:46.501Z",
-      "created_at": "2026-10-23T20:54:46.501Z"
+      "timestamp": "2026-10-23T21:16:22.594Z",
+      "created_at": "2026-10-23T21:16:22.594Z"
     },
     {
-      "id": "b3612e02-b007-4237-8c1d-7854eb0f3748",
+      "id": "78e9d4b5-36c6-4b78-8581-d275ffe04134",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "resource_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "outcome": "failure",
-      "correlation_id": "dd1d0107-e2a6-4587-900f-d40324479783",
+      "correlation_id": "dc9d92c4-69c9-4c00-88dd-cfbed575c47b",
       "metadata": {
         "authority_code": "STATE_TECH_BOARD",
         "status": "inconclusive",
         "identifier": "STATE_UNIV_01"
       },
-      "timestamp": "2026-10-23T20:54:46.524Z",
-      "created_at": "2026-10-23T20:54:46.524Z"
+      "timestamp": "2026-10-23T21:16:22.620Z",
+      "created_at": "2026-10-23T21:16:22.620Z"
     },
     {
-      "id": "5397b0f9-9a35-48da-9c4e-a320915e6a4c",
+      "id": "c98eb36c-a999-4ff5-95c7-70bf9538a5f0",
       "action": "VERIFICATION_PIPELINE_COMPLETED",
       "resource_type": "APPLICATION",
-      "resource_id": "48853a8c-034b-48a1-a6e9-e448eec62c44",
+      "resource_id": "b567fcc7-4089-4aa1-8259-d67049a1c008",
       "outcome": "success",
-      "correlation_id": "3f46ce2d-7205-4d3c-9318-6c8a5a8767d3",
+      "correlation_id": "35fe7d9a-fc55-41a2-88d8-40e570751339",
       "metadata": {
         "priority": "high",
         "checks_count": 10,
@@ -16152,133 +16180,133 @@
         "authority_checks_count": 2,
         "evaluations_count": 8
       },
-      "timestamp": "2026-10-23T20:54:46.633Z",
-      "created_at": "2026-10-23T20:54:46.633Z"
+      "timestamp": "2026-10-23T21:16:22.742Z",
+      "created_at": "2026-10-23T21:16:22.742Z"
     },
     {
-      "id": "a1c3cb01-c692-47a8-a07c-f1e06490fd5a",
-      "actor_id": "f182308e-536e-4735-9852-0f31f44e6910",
+      "id": "51e94552-eaa9-4f57-878a-52d375a32769",
+      "actor_id": "efed75ce-12e1-4cc2-8f02-38adf516b766",
       "actor_role": "applicant",
       "action": "DOCUMENT_UPLOADED",
       "resource_type": "DOCUMENT",
-      "resource_id": "49e2a9db-5e18-4653-908f-06cdfea6b77f",
+      "resource_id": "302b9b16-631c-419c-8b9a-fe31e39c8ddb",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "35fb29f5-6367-4ac3-8684-2a5bfda64cfe",
+      "correlation_id": "b2b700fa-d5d8-4e13-8f93-db8dbe009032",
       "metadata": {
         "filename": "unreadable_scan.pdf",
         "sha256": "9e0240a7127a7db7f9c2f22641f15258de161f49a6229ad1a55118ae6f5f0acf",
         "sizeBytes": 415
       },
-      "timestamp": "2026-10-23T20:54:47.517Z",
-      "created_at": "2026-10-23T20:54:47.517Z"
+      "timestamp": "2026-10-23T21:16:23.639Z",
+      "created_at": "2026-10-23T21:16:23.640Z"
     },
     {
-      "id": "b78b5155-cd89-4605-919e-485974bee3d8",
+      "id": "28868d40-ebb4-4927-aa69-95f3410fcfae",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "success",
-      "correlation_id": "1dc7b275-f899-462b-8c63-6387a056af34",
+      "correlation_id": "10108db9-4d57-407d-92db-4ba04ee57a13",
       "metadata": {
         "authority_code": "DIGILOCKER_NAD",
         "status": "verified",
         "identifier": "123456789012"
       },
-      "timestamp": "2026-10-23T20:54:47.541Z",
-      "created_at": "2026-10-23T20:54:47.541Z"
+      "timestamp": "2026-10-23T21:16:23.665Z",
+      "created_at": "2026-10-23T21:16:23.665Z"
     },
     {
-      "id": "9e85e4dc-a68a-4582-ad1a-7409e9ec6010",
+      "id": "7b9b52b4-f91f-45c6-a792-0b04b27c6364",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "failure",
-      "correlation_id": "9cdbd77f-60d9-493d-84f0-b1250663b138",
+      "correlation_id": "19f4dfad-8ece-4e83-9a21-052953b1ab88",
       "metadata": {
         "authority_code": "NSDL_PAN_VERIFY",
         "status": "mismatch_detected",
         "identifier": "INVALID_PAN_123"
       },
-      "timestamp": "2026-10-23T20:54:47.563Z",
-      "created_at": "2026-10-23T20:54:47.563Z"
+      "timestamp": "2026-10-23T21:16:23.691Z",
+      "created_at": "2026-10-23T21:16:23.691Z"
     },
     {
-      "id": "daebf5c8-e892-40b1-8680-f07a79b132ed",
+      "id": "fcc62f19-d988-479a-bfce-2697d9617cbd",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "failure",
-      "correlation_id": "ff99c1e9-201b-4a67-80ce-7274f106800f",
+      "correlation_id": "36e107ef-1f40-43f2-85d3-304aeea3869b",
       "metadata": {
         "authority_code": "AICTE_CENTRAL_REGISTRY",
         "status": "not_configured",
         "identifier": "1-3324567891"
       },
-      "timestamp": "2026-10-23T20:54:47.584Z",
-      "created_at": "2026-10-23T20:54:47.584Z"
+      "timestamp": "2026-10-23T21:16:23.714Z",
+      "created_at": "2026-10-23T21:16:23.714Z"
     },
     {
-      "id": "e8bc3d25-804a-42f9-a931-c6844979081d",
+      "id": "8820ad7b-824e-4487-b368-b97c7b76a233",
       "action": "ISSUING_AUTHORITY_VERIFICATION",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "failure",
-      "correlation_id": "d1d76a31-8fdd-430b-93ec-672c537fc95e",
+      "correlation_id": "b93917ac-4838-4493-8a77-13dfc2cfe1c8",
       "metadata": {
         "authority_code": "STATE_TECH_BOARD",
         "status": "source_unavailable",
         "identifier": "UNIV_99"
       },
-      "timestamp": "2026-10-23T20:54:47.605Z",
-      "created_at": "2026-10-23T20:54:47.605Z"
+      "timestamp": "2026-10-23T21:16:23.735Z",
+      "created_at": "2026-10-23T21:16:23.735Z"
     },
     {
-      "id": "00c10aa2-f9e1-4a78-b47b-6441b4a5b6ea",
+      "id": "5a88be77-2e66-4084-8c10-1d505ab471f1",
       "actor_id": "e5a501c6-1d4e-467d-948f-ccf387c814e4",
       "actor_role": "officer",
       "action": "APPLICATION_APPROVED",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "success",
       "ip_address": "127.0.0.1",
-      "correlation_id": "0a168291-a449-4e3d-9568-aebb30f96e90",
+      "correlation_id": "4a521e36-8a92-44e3-b387-86e0e21059ba",
       "metadata": {
         "reason": "Academic credentials verified. Physical campus facilities referred to Expert Visit Committee.",
-        "reportId": "c6fb9028-698d-41ed-9f4e-cafebb3b56e4",
+        "reportId": "2103fc3e-1718-40a9-b0e7-f2efdc40c90e",
         "requires_physical_inspection": true,
         "inspection_committee_type": "EVC"
       },
-      "timestamp": "2026-10-23T20:54:48.443Z",
-      "created_at": "2026-10-23T20:54:48.443Z"
+      "timestamp": "2026-10-23T21:16:25.019Z",
+      "created_at": "2026-10-23T21:16:25.019Z"
     },
     {
-      "id": "d977a968-04bc-42d9-8ac6-3cc259bdf44a",
+      "id": "bc4eca2f-1d26-4a4b-8b67-6eeef00d70dc",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "UNAUTHORIZED_APPLICATION_ACCESS",
       "resource_type": "APPLICATION",
-      "resource_id": "559ca5fb-4289-4dd9-ba84-81b51ae6a6d1",
+      "resource_id": "4e2a0f1c-1522-41b3-8c19-624c22d78baa",
       "outcome": "denied",
       "ip_address": "127.0.0.1",
-      "correlation_id": "56199b1c-3c23-4433-bc61-e6d40b2579cd",
+      "correlation_id": "cb4f11f9-374c-4e61-91e3-2da2e6f43657",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:48.467Z",
-      "created_at": "2026-10-23T20:54:48.467Z"
+      "timestamp": "2026-10-23T21:16:25.044Z",
+      "created_at": "2026-10-23T21:16:25.044Z"
     },
     {
-      "id": "a51895d9-51e1-4e55-bcb7-2e7f74fe5913",
+      "id": "6c7095c3-9ab2-4a66-b949-f15517f1e11a",
       "actor_id": "1daae7c2-b483-4b3a-93ae-ef37e01ea54e",
       "actor_role": "applicant",
       "action": "UNAUTHORIZED_DOCUMENT_METADATA_ACCESS",
       "resource_type": "DOCUMENT",
-      "resource_id": "01b6491d-e12b-4ae7-9b9e-77dcf16ade13",
+      "resource_id": "59a6d291-a66d-46e0-8ae1-78e99a573957",
       "outcome": "denied",
       "ip_address": "127.0.0.1",
-      "correlation_id": "612a335e-702e-4f35-a4c6-6168e090b2a8",
+      "correlation_id": "ec5ac89b-57e0-4fb4-8785-1fb9750ef6a6",
       "metadata": {},
-      "timestamp": "2026-10-23T20:54:48.483Z",
-      "created_at": "2026-10-23T20:54:48.483Z"
+      "timestamp": "2026-10-23T21:16:25.059Z",
+      "created_at": "2026-10-23T21:16:25.059Z"
     }
   ]
 }
