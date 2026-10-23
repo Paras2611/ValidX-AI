@@ -202,6 +202,44 @@ export interface RuleEvaluation {
   evaluated_at: string;
 }
 
+export type IssuingAuthorityOutcome =
+  | 'verified'
+  | 'mismatch_detected'
+  | 'expired'
+  | 'verification_pending'
+  | 'source_unavailable'
+  | 'manual_review'
+  | 'not_configured'
+  | 'inconclusive';
+
+export interface IssuingAuthorityCheck {
+  id: string;
+  application_id: string;
+  document_id?: string;
+  authority_code: string;
+  authority_name: string;
+  verification_method: string;
+  status: IssuingAuthorityOutcome;
+  input_identifier: string;
+  evidence: Record<string, any>;
+  timestamp: string;
+  is_simulated_adapter: boolean;
+  notes?: string;
+}
+
+export interface DocumentAnomaly {
+  id: string;
+  application_id: string;
+  document_id?: string;
+  category: 'DUPLICATE_DOCUMENT' | 'INCONSISTENT_IDENTIFIER' | 'IRREGULAR_DATE' | 'SUSPICIOUS_METADATA' | 'LOW_CONFIDENCE_SCAN';
+  description: string;
+  evidence: Record<string, any>;
+  detection_method: string;
+  confidence: number;
+  status: 'flagged' | 'reviewed' | 'cleared';
+  created_at: string;
+}
+
 export interface ReviewDecision {
   id: string;
   application_id: string;
@@ -209,6 +247,9 @@ export interface ReviewDecision {
   action: 'approve' | 'reject' | 'request_corrections';
   reason: string;
   internal_notes?: string;
+  requires_physical_inspection?: boolean;
+  inspection_committee_type?: 'EVC' | 'SAC' | 'NONE';
+  infrastructure_observations?: string;
   created_at: string;
 }
 

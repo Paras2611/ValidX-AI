@@ -3,7 +3,6 @@ import { useParams, Link } from 'react-router-dom';
 import { api } from '../lib/api';
 import { PriorityBadge, StatusBadge, OutcomeBadge } from '../components/Badges';
 import {
-  ShieldCheck,
   FileText,
   Download,
   AlertCircle,

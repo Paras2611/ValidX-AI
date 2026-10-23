@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { ShieldCheck, ArrowRight, AlertCircle } from 'lucide-react';
+import { ArrowRight, AlertCircle } from 'lucide-react';
 
 export const RegisterPage: React.FC = () => {
   const { register } = useAuth();
@@ -30,8 +30,8 @@ export const RegisterPage: React.FC = () => {
     <div className="flex-1 flex items-center justify-center p-4 sm:p-6 bg-slate-50">
       <div className="max-w-md w-full bg-white rounded-2xl border border-slate-200/80 shadow-md p-8">
         <div className="text-center mb-8">
-          <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center text-white mx-auto shadow-sm">
-            <ShieldCheck className="w-6 h-6 text-indigo-400" />
+          <div className="w-24 h-14 rounded-xl bg-white flex items-center justify-center mx-auto shadow-xs p-1 border border-slate-200 overflow-hidden">
+            <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="w-full h-full object-contain" />
           </div>
           <h2 className="text-2xl font-bold text-slate-900 mt-4">Create Applicant Account</h2>
           <p className="text-xs text-slate-500 mt-1">Submit & track institutional applications</p>

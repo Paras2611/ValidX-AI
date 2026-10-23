@@ -4,7 +4,6 @@ import { useAuth } from '../context/AuthContext';
 import { api } from '../lib/api';
 import { Notification } from '../types';
 import {
-  ShieldCheck,
   Bell,
   LogOut,
   UserCheck,
@@ -63,12 +62,12 @@ export const Navbar: React.FC = () => {
     return (
       <header className="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white shadow-md shadow-slate-900/20">
-              <ShieldCheck className="w-6 h-6 text-indigo-400" />
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="h-9 w-14 rounded-lg overflow-hidden bg-white flex items-center justify-center shadow-xs p-0.5 border border-slate-200">
+              <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-full w-full object-contain" />
             </div>
             <div>
-              <span className="font-extrabold text-xl tracking-tight text-slate-900">VALIDATEX</span>
+              <span className="font-extrabold text-xl tracking-tight text-slate-900 group-hover:text-indigo-600 transition">VALIDATEX</span>
               <span className="ml-2 px-2 py-0.5 text-[10px] font-semibold bg-indigo-50 text-indigo-700 rounded-full border border-indigo-200">
                 SIH26261 AICTE
               </span>
@@ -107,12 +106,12 @@ export const Navbar: React.FC = () => {
         <div className="h-16 flex items-center justify-between gap-4">
           {/* Logo & Platform Tag */}
           <div className="flex items-center gap-6">
-            <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-slate-900 flex items-center justify-center text-white shadow-sm">
-                <ShieldCheck className="w-5 h-5 text-indigo-400" />
+            <Link to="/" className="flex items-center gap-2.5 group">
+              <div className="h-8 w-12 rounded-md overflow-hidden bg-white flex items-center justify-center shadow-xs p-0.5 border border-slate-200">
+                <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-full w-full object-contain" />
               </div>
               <div className="hidden sm:block">
-                <span className="font-bold text-lg text-slate-900">VALIDATEX</span>
+                <span className="font-bold text-lg text-slate-900 group-hover:text-indigo-600 transition">VALIDATEX</span>
                 <span className="ml-2 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
                   AICTE / Smart Auto
                 </span>

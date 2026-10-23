@@ -160,15 +160,33 @@ export const api = {
         method: 'POST',
         body: JSON.stringify({ reason, instructions }),
       }),
-    approve: (applicationId: string, reason: string, internal_notes?: string) =>
+    approve: (
+      applicationId: string,
+      reason: string,
+      internal_notes?: string,
+      options?: {
+        requires_physical_inspection?: boolean;
+        inspection_committee_type?: string;
+        infrastructure_observations?: string;
+      }
+    ) =>
       request<{ message: string; decision: any; report: any }>(`/reviews/applications/${applicationId}/approve`, {
         method: 'POST',
-        body: JSON.stringify({ reason, internal_notes }),
+        body: JSON.stringify({ reason, internal_notes, ...options }),
       }),
-    reject: (applicationId: string, reason: string, internal_notes?: string) =>
+    reject: (
+      applicationId: string,
+      reason: string,
+      internal_notes?: string,
+      options?: {
+        requires_physical_inspection?: boolean;
+        inspection_committee_type?: string;
+        infrastructure_observations?: string;
+      }
+    ) =>
       request<{ message: string; decision: any }>(`/reviews/applications/${applicationId}/reject`, {
         method: 'POST',
-        body: JSON.stringify({ reason, internal_notes }),
+        body: JSON.stringify({ reason, internal_notes, ...options }),
       }),
   },
 

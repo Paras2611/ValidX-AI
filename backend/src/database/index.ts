@@ -18,6 +18,8 @@ import {
   Report,
   Notification,
   AuditEvent,
+  IssuingAuthorityCheck,
+  DocumentAnomaly,
 } from '../types';
 
 export interface DatabaseSchema {
@@ -28,6 +30,8 @@ export interface DatabaseSchema {
   documents: Document[];
   extracted_fields: ExtractedField[];
   verification_checks: VerificationCheck[];
+  issuing_authority_checks: IssuingAuthorityCheck[];
+  document_anomalies: DocumentAnomaly[];
   discrepancies: Discrepancy[];
   compliance_rules: ComplianceRule[];
   compliance_rule_versions: ComplianceRuleVersion[];
@@ -47,6 +51,8 @@ const defaultSchema: DatabaseSchema = {
   documents: [],
   extracted_fields: [],
   verification_checks: [],
+  issuing_authority_checks: [],
+  document_anomalies: [],
   discrepancies: [],
   compliance_rules: [],
   compliance_rule_versions: [],

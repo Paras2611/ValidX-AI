@@ -314,7 +314,13 @@ export class ReviewsController {
     try {
       const user = req.user!;
       const { applicationId } = req.params;
-      const { reason, internal_notes } = req.body;
+      const {
+        reason,
+        internal_notes,
+        requires_physical_inspection = false,
+        inspection_committee_type = 'NONE',
+        infrastructure_observations,
+      } = req.body;
 
       if (!reason || !reason.trim()) {
         res.status(400).json({ error: 'Bad Request', message: 'Mandatory justification reason is required for approval' });
@@ -339,6 +345,9 @@ export class ReviewsController {
         action: 'approve',
         reason: reason.trim(),
         internal_notes: internal_notes || '',
+        requires_physical_inspection: Boolean(requires_physical_inspection),
+        inspection_committee_type,
+        infrastructure_observations: infrastructure_observations || '',
         created_at: new Date().toISOString(),
       };
       db.insert('review_decisions', decision);
@@ -367,7 +376,12 @@ export class ReviewsController {
         resourceId: applicationId,
         outcome: 'success',
         ipAddress: req.ip,
-        metadata: { reason, reportId: report?.id },
+        metadata: {
+          reason,
+          reportId: report?.id,
+          requires_physical_inspection: Boolean(requires_physical_inspection),
+          inspection_committee_type,
+        },
       });
 
       res.json({
@@ -387,7 +401,13 @@ export class ReviewsController {
     try {
       const user = req.user!;
       const { applicationId } = req.params;
-      const { reason, internal_notes } = req.body;
+      const {
+        reason,
+        internal_notes,
+        requires_physical_inspection = false,
+        inspection_committee_type = 'NONE',
+        infrastructure_observations,
+      } = req.body;
 
       if (!reason || !reason.trim()) {
         res.status(400).json({ error: 'Bad Request', message: 'Mandatory statutory reason is required for rejection' });
@@ -411,6 +431,9 @@ export class ReviewsController {
         action: 'reject',
         reason: reason.trim(),
         internal_notes: internal_notes || '',
+        requires_physical_inspection: Boolean(requires_physical_inspection),
+        inspection_committee_type,
+        infrastructure_observations: infrastructure_observations || '',
         created_at: new Date().toISOString(),
       };
       db.insert('review_decisions', decision);

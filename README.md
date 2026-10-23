@@ -1,12 +1,24 @@
 # VALIDATEX --- AI-Powered Application & Document Verification System
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![Tests](https://img.shields.io/badge/tests-22%2F22%20passing-brightgreen.svg)]()
+[![Tests](https://img.shields.io/badge/tests-37%2F37%20passing-brightgreen.svg)]()
 [![Problem Statement](https://img.shields.io/badge/Problem%20Statement-SIH26261-blue.svg)]()
 [![Theme](https://img.shields.io/badge/Organization-AICTE%20%2F%20Smart%20Automation-indigo.svg)]()
 [![Node](https://img.shields.io/badge/node-%3E%3D20.0.0-blue.svg)]()
+[![Compliance Audit](https://img.shields.io/badge/AICTE%20Compliance-Audited%20%26%20Verified-brightgreen.svg)](docs/compliance/AICTE_REQUIREMENTS_TRACEABILITY.md)
 
 > **Tagline:** Validate Smarter. Verify Faster. Trust Better.
+
+---
+
+## AICTE Statutory Compliance Audit Deliverables
+
+For the formal regulatory and technical compliance audit against problem statement **SIH26261**, consult the comprehensive documentation suite:
+- [AICTE Requirements Traceability Matrix](docs/compliance/AICTE_REQUIREMENTS_TRACEABILITY.md)
+- [AICTE Compliance Gap Analysis](docs/compliance/AICTE_GAP_ANALYSIS.md)
+- [AICTE Remediation & Implementation Plan](docs/compliance/AICTE_REMEDIATION_PLAN.md)
+- [AICTE Functional & Security Test Report](docs/compliance/AICTE_TEST_REPORT.md)
+- [AICTE External Integration Limitations & Adapters](docs/compliance/AICTE_INTEGRATION_LIMITATIONS.md)
 
 ---
 
@@ -118,7 +130,7 @@ All accounts are pre-seeded with the password: `Password@123`
    ```bash
    npm test
    ```
-   *Expected outcome: 22 of 22 tests passing.*
+   *Expected outcome: 37 of 37 tests passing (including 15 AICTE compliance audit tests).*
 
 6. **Start Backend & Frontend Development Servers:**
    - In terminal 1 (Backend):

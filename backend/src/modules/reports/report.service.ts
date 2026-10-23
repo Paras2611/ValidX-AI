@@ -20,6 +20,8 @@ export class ReportService {
     const checks = db.find('verification_checks', (c) => c.application_id === applicationId);
     const discrepancies = db.find('discrepancies', (d) => d.application_id === applicationId);
     const evaluations = db.find('rule_evaluations', (e) => e.application_id === applicationId);
+    const authorityChecks = db.find('issuing_authority_checks', (ac) => ac.application_id === applicationId);
+    const anomalies = db.find('document_anomalies', (a) => a.application_id === applicationId);
     const decisions = db.find('review_decisions', (d) => d.application_id === applicationId);
     const latestDecision = decisions[decisions.length - 1];
 
@@ -34,8 +36,20 @@ export class ReportService {
 
       // Header Banner
       doc.rect(0, 0, doc.page.width, 90).fill('#0F172A');
-      doc.fillColor('#FFFFFF').fontSize(22).font('Helvetica-Bold').text('VALIDATEX', 50, 25);
-      doc.fontSize(10).font('Helvetica').text('AI-Powered Application & Document Verification System', 50, 52);
+      const logoAssetPath = path.resolve(__dirname, '../../../assets/ValidateXLogo.png');
+      if (fs.existsSync(logoAssetPath)) {
+        try {
+          doc.image(logoAssetPath, 45, 20, { height: 50 });
+          doc.fillColor('#FFFFFF').fontSize(18).font('Helvetica-Bold').text('VALIDATEX', 145, 26);
+          doc.fontSize(9).font('Helvetica').text('AI-Powered Application & Document Verification System', 145, 49);
+        } catch {
+          doc.fillColor('#FFFFFF').fontSize(22).font('Helvetica-Bold').text('VALIDATEX', 50, 25);
+          doc.fontSize(10).font('Helvetica').text('AI-Powered Application & Document Verification System', 50, 52);
+        }
+      } else {
+        doc.fillColor('#FFFFFF').fontSize(22).font('Helvetica-Bold').text('VALIDATEX', 50, 25);
+        doc.fontSize(10).font('Helvetica').text('AI-Powered Application & Document Verification System', 50, 52);
+      }
       doc.fontSize(9).text(`AUDIT REPORT REFERENCE: ${reportRef}`, doc.page.width - 250, 32, { align: 'right', width: 200 });
       doc.text(`DATE ISSUED: ${new Date().toLocaleDateString('en-GB')}`, doc.page.width - 250, 48, { align: 'right', width: 200 });
 
@@ -123,6 +137,14 @@ export class ReportService {
         doc.fontSize(10).font('Helvetica-Bold').text(`Final Action: `, { continued: true })
           .text(latestDecision.action.toUpperCase(), { underline: true });
         doc.font('Helvetica').text(`Decision Reason: ${latestDecision.reason}`);
+        if (latestDecision.requires_physical_inspection) {
+          doc.fillColor('#991B1B').font('Helvetica-Bold')
+            .text(`Physical Site Inspection Required: YES (Committee: ${latestDecision.inspection_committee_type || 'EVC'})`)
+            .fillColor('#0F172A').font('Helvetica');
+          if (latestDecision.infrastructure_observations) {
+            doc.text(`Infrastructure Observations: ${latestDecision.infrastructure_observations}`);
+          }
+        }
         doc.text(`Recorded On: ${latestDecision.created_at}`);
       } else {
         doc.fontSize(10).font('Helvetica-Oblique').text('Application review currently in progress. Final authorized determination pending.');

@@ -71,4 +71,37 @@ createSamplePdf('valid_degree_transcript.pdf', 'Final Degree Marksheet & Transcr
   'Issued By': 'State Technical University',
 });
 
+createSamplePdf('aicte_previous_eoa.pdf', 'AICTE Extension of Approval Order', {
+  'Institution Name': 'Rajarambapu Institute of Technology',
+  'AICTE Permanent ID': '1-3324567891',
+  'Approval Session': '2025-2026',
+  'Approved Intake': '480',
+  'Issuing Authority': 'All India Council for Technical Education',
+  'Valid Upto': '2027-06-30',
+});
+
+createSamplePdf('state_govt_noc.pdf', 'State Government Concurrence NOC', {
+  'Institution Name': 'Rajarambapu Institute of Technology',
+  'Government Authority': 'Directorate of Technical Education',
+  'Status': 'Unconditional Concurrence Granted',
+  'Validity Year': '2026-2027',
+  'Issuing Authority': 'Department of Higher & Technical Education',
+});
+
+createSamplePdf('university_affiliation_noc.pdf', 'University Affiliation Order', {
+  'Institution Name': 'Rajarambapu Institute of Technology',
+  'Affiliating University': 'Shivaji University',
+  'Session': '2026-2027',
+  'Courses Approved': 'Engineering & Management Programs',
+  'Issuing Authority': 'Registrar Academic Council',
+});
+
+createSamplePdf('nba_accreditation_cert.pdf', 'National Board of Accreditation Certificate', {
+  'Institution Name': 'Rajarambapu Institute of Technology',
+  'Program Name': 'B.Tech Computer Science & Engineering',
+  'Accreditation Status': 'Accredited Tier-I',
+  'Expiry Date': '2027-06-30',
+  'Issuing Authority': 'National Board of Accreditation (NBA)',
+});
+
 console.log('Sample test documents created successfully in sample-documents/');

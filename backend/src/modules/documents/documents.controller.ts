@@ -229,10 +229,32 @@ export class DocumentsController {
    */
   public static async getDocumentDetails(req: AuthenticatedRequest, res: Response): Promise<void> {
     try {
+      const user = req.user!;
       const { id } = req.params;
       const doc = db.findById('documents', id);
       if (!doc) {
         res.status(404).json({ error: 'Not Found', message: 'Document not found' });
+        return;
+      }
+
+      const app = db.findById('applications', doc.application_id);
+      if (!app) {
+        res.status(404).json({ error: 'Not Found', message: 'Application not found' });
+        return;
+      }
+
+      // IDOR Permission Check: Applicants may only access documents in their own applications
+      if (user.role === 'applicant' && app.applicant_id !== user.id) {
+        AuditService.log({
+          actorId: user.id,
+          actorRole: user.role,
+          action: 'UNAUTHORIZED_DOCUMENT_METADATA_ACCESS',
+          resourceType: 'DOCUMENT',
+          resourceId: id,
+          outcome: 'denied',
+          ipAddress: req.ip,
+        });
+        res.status(403).json({ error: 'Forbidden', message: 'Access denied to document details' });
         return;
       }
 

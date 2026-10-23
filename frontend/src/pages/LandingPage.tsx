@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { UserRole } from '../types';
 import {
-  ShieldCheck,
   Cpu,
   FileCheck2,
   FileSpreadsheet,
@@ -43,9 +42,15 @@ export const LandingPage: React.FC = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-28 border-b border-slate-200 bg-white">
+      <section className="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 border-b border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
+            <div className="mb-6 flex justify-center">
+              <div className="p-1.5 bg-white rounded-2xl shadow-lg shadow-indigo-100 border border-slate-200/90 inline-flex items-center justify-center">
+                <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-16 sm:h-20 w-auto object-contain rounded-xl" />
+              </div>
+            </div>
+
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold mb-6">
               <Zap className="w-3.5 h-3.5 text-indigo-600" />
               <span>Validate Smarter. Verify Faster. Trust Better.</span>
@@ -250,8 +255,10 @@ export const LandingPage: React.FC = () => {
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left sm:flex items-center justify-between">
           <div>
-            <div className="flex items-center gap-2 justify-center sm:justify-start">
-              <ShieldCheck className="w-5 h-5 text-indigo-400" />
+            <div className="flex items-center gap-2.5 justify-center sm:justify-start">
+              <div className="h-8 w-12 rounded-md overflow-hidden bg-white p-0.5 border border-slate-700 flex items-center justify-center">
+                <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-full w-full object-contain" />
+              </div>
               <span className="font-extrabold text-white text-base">VALIDATEX</span>
             </div>
             <p className="text-xs text-slate-500 mt-1">

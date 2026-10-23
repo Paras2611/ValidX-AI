@@ -8,7 +8,10 @@ import {
   Discrepancy,
   CheckOutcome,
   PriorityLevel,
+  IssuingAuthorityCheck,
+  DocumentAnomaly,
 } from '../../types';
+import { IssuingAuthorityService } from './issuing-authority.service';
 
 export class VerificationService {
   /**
@@ -17,6 +20,8 @@ export class VerificationService {
   public static async runVerification(applicationId: string): Promise<{
     checks: VerificationCheck[];
     discrepancies: Discrepancy[];
+    authorityChecks: IssuingAuthorityCheck[];
+    anomalies: DocumentAnomaly[];
     priority: PriorityLevel;
     priorityReason: string;
   }> {
@@ -26,12 +31,14 @@ export class VerificationService {
     const appType = db.findById('application_types', app.application_type_id);
     const documents = db.find('documents', (d) => d.application_id === applicationId);
 
-    // Clean up previous checks and discrepancies for idempotent re-runs
+    // Clean up previous checks, discrepancies, and anomalies for idempotent re-runs
     db.deleteWhere('verification_checks', (c) => c.application_id === applicationId);
     db.deleteWhere('discrepancies', (d) => d.application_id === applicationId && d.status === 'open');
+    db.deleteWhere('document_anomalies', (a) => a.application_id === applicationId);
 
     const generatedChecks: VerificationCheck[] = [];
     const generatedDiscrepancies: Discrepancy[] = [];
+    const generatedAnomalies: DocumentAnomaly[] = [];
 
     // --- CHECK 1: Missing Mandatory Documents ---
     if (appType) {
@@ -107,6 +114,20 @@ export class VerificationService {
           timestamp: new Date().toISOString(),
         };
         generatedChecks.push(db.insert('verification_checks', check));
+
+        const anomaly: DocumentAnomaly = {
+          id: uuidv4(),
+          application_id: applicationId,
+          document_id: doc.id,
+          category: 'LOW_CONFIDENCE_SCAN',
+          description: `Document '${doc.original_filename}' yielded no readable text blocks during OCR; marked for manual officer inspection.`,
+          evidence: { filename: doc.original_filename },
+          detection_method: 'OCR_CONFIDENCE_THRESHOLD_EVALUATION',
+          confidence: 0.90,
+          status: 'flagged',
+          created_at: new Date().toISOString(),
+        };
+        generatedAnomalies.push(db.insert('document_anomalies', anomaly));
       }
 
       // Check Expiration Date
@@ -243,7 +264,6 @@ export class VerificationService {
         const extractedIncome = parseFloat(inf.normalized_value);
 
         if (!isNaN(declaredIncome) && !isNaN(extractedIncome)) {
-          // Allow small tolerance (within 1%)
           const diff = Math.abs(declaredIncome - extractedIncome);
           if (diff > 1000) {
             const check: VerificationCheck = {
@@ -292,20 +312,126 @@ export class VerificationService {
       }
     }
 
-    // --- CHECK 4: Calculate Transparent Priority Assessment ---
+    // --- CHECK 4: Anomaly Detection (Duplicate Documents & Irregular Dates) ---
+    // 4a. Duplicate Document Hash Detection
+    const seenHashes = new Map<string, Document>();
+    for (const doc of documents) {
+      if (seenHashes.has(doc.sha256_hash)) {
+        const original = seenHashes.get(doc.sha256_hash)!;
+        const check: VerificationCheck = {
+          id: uuidv4(),
+          application_id: applicationId,
+          document_id: doc.id,
+          check_type: 'DUPLICATE_DOCUMENT_HASH',
+          outcome: 'failed',
+          method: 'SHA256_HASH_COMPARISON',
+          evidence: {
+            current_document: doc.original_filename,
+            matching_document: original.original_filename,
+            sha256: doc.sha256_hash,
+          },
+          explanation: `Identical cryptographic SHA-256 hash detected across '${doc.original_filename}' and '${original.original_filename}'. Critical safeguard: matching hash establishes file identity relative to compared file; it does not prove document authenticity or fraud.`,
+          timestamp: new Date().toISOString(),
+        };
+        generatedChecks.push(db.insert('verification_checks', check));
+
+        const anomaly: DocumentAnomaly = {
+          id: uuidv4(),
+          application_id: applicationId,
+          document_id: doc.id,
+          category: 'DUPLICATE_DOCUMENT',
+          description: `Duplicate file content uploaded under different slots: '${doc.original_filename}' shares hash with '${original.original_filename}'.`,
+          evidence: { sha256: doc.sha256_hash },
+          detection_method: 'CRYPTOGRAPHIC_DIGEST_COMPARISON',
+          confidence: 1.0,
+          status: 'flagged',
+          created_at: new Date().toISOString(),
+        };
+        generatedAnomalies.push(db.insert('document_anomalies', anomaly));
+
+        const discrepancy: Discrepancy = {
+          id: uuidv4(),
+          application_id: applicationId,
+          field_name: doc.document_type,
+          declared_value: `Unique ${doc.document_type}`,
+          observed_value: `Duplicate of ${original.document_type}`,
+          document_id: doc.id,
+          severity: 'medium',
+          status: 'open',
+          comparison_method: 'HASH_DIGEST_CONCORDANCE',
+          explanation: `Identical file uploaded under multiple document types. Reviewer verification required.`,
+          created_at: new Date().toISOString(),
+        };
+        generatedDiscrepancies.push(db.insert('discrepancies', discrepancy));
+      } else {
+        seenHashes.set(doc.sha256_hash, doc);
+      }
+    }
+
+    // 4b. Irregular Future Date Anomaly
+    for (const doc of documents) {
+      const extractedFields = db.find('extracted_fields', (f) => f.document_id === doc.id);
+      const dobField = extractedFields.find((f) => f.field_name === 'dob');
+      if (dobField && dobField.normalized_value) {
+        const dobDate = new Date(dobField.normalized_value);
+        if (dobDate > new Date()) {
+          const anomaly: DocumentAnomaly = {
+            id: uuidv4(),
+            application_id: applicationId,
+            document_id: doc.id,
+            category: 'IRREGULAR_DATE',
+            description: `Date of birth '${dobField.normalized_value}' is in the future. Irregular date sequence detected.`,
+            evidence: { dob: dobField.normalized_value },
+            detection_method: 'CHRONOLOGICAL_SANITY_CHECK',
+            confidence: 0.99,
+            status: 'flagged',
+            created_at: new Date().toISOString(),
+          };
+          generatedAnomalies.push(db.insert('document_anomalies', anomaly));
+        }
+      }
+    }
+
+    // --- CHECK 5: Original Issuing Authorities Verification ---
+    let authorityChecks: IssuingAuthorityCheck[] = [];
+    try {
+      authorityChecks = await IssuingAuthorityService.runAllAuthorityChecks(applicationId);
+      for (const ac of authorityChecks) {
+        if (ac.status === 'mismatch_detected' || ac.status === 'expired') {
+          const discrepancy: Discrepancy = {
+            id: uuidv4(),
+            application_id: applicationId,
+            field_name: ac.authority_code,
+            declared_value: `Valid under ${ac.authority_name}`,
+            observed_value: `Authority Status: ${ac.status.toUpperCase()}`,
+            severity: 'high',
+            status: 'open',
+            comparison_method: ac.verification_method,
+            explanation: `Issuing authority check yielded '${ac.status}': ${ac.notes || ''}`,
+            created_at: new Date().toISOString(),
+          };
+          generatedDiscrepancies.push(db.insert('discrepancies', discrepancy));
+        }
+      }
+    } catch (authErr: any) {
+      console.warn('Issuing authority evaluation warning:', authErr?.message);
+    }
+
+    // --- CHECK 6: Calculate Transparent Priority Assessment ---
     let priority: PriorityLevel = 'low';
     const reasons: string[] = [];
 
     const highDiscrepancies = generatedDiscrepancies.filter((d) => d.severity === 'high');
     const mediumDiscrepancies = generatedDiscrepancies.filter((d) => d.severity === 'medium');
     const inconclusiveChecks = generatedChecks.filter((c) => c.outcome === 'inconclusive');
+    const flaggedAnomalies = generatedAnomalies.filter((a) => a.status === 'flagged');
 
     if (highDiscrepancies.length > 0) {
       priority = 'high';
       reasons.push(`${highDiscrepancies.length} high-severity issue(s) detected: ${highDiscrepancies.map((d) => d.field_name).join(', ')}`);
-    } else if (mediumDiscrepancies.length > 0) {
+    } else if (mediumDiscrepancies.length > 0 || flaggedAnomalies.length > 0) {
       priority = 'medium';
-      reasons.push(`${mediumDiscrepancies.length} minor discrepancy requiring officer review.`);
+      reasons.push(`${mediumDiscrepancies.length + flaggedAnomalies.length} minor discrepancy or anomaly signal(s) requiring officer review.`);
     } else if (inconclusiveChecks.length > 0) {
       priority = 'inconclusive';
       reasons.push(`${inconclusiveChecks.length} document check(s) could not be definitively evaluated.`);
@@ -326,6 +452,8 @@ export class VerificationService {
     return {
       checks: generatedChecks,
       discrepancies: generatedDiscrepancies,
+      authorityChecks,
+      anomalies: generatedAnomalies,
       priority,
       priorityReason,
     };

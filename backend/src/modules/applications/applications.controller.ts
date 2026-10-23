@@ -199,6 +199,8 @@ export class ApplicationsController {
       }
 
       const reports = db.find('reports', (r) => r.application_id === app.id);
+      const authorityChecks = db.find('issuing_authority_checks', (ac) => ac.application_id === app.id);
+      const anomalies = db.find('document_anomalies', (da) => da.application_id === app.id);
 
       res.json({
         application: {
@@ -214,6 +216,8 @@ export class ApplicationsController {
         documents,
         extracted_fields: allExtractedFields,
         verification_checks: checks,
+        issuing_authority_checks: authorityChecks,
+        document_anomalies: anomalies,
         discrepancies,
         rule_evaluations: ruleEvaluations,
         decisions,
@@ -473,6 +477,8 @@ export class ApplicationsController {
           priority: verification.priority,
           checks_count: verification.checks.length,
           discrepancies_count: verification.discrepancies.length,
+          anomalies_count: verification.anomalies.length,
+          authority_checks_count: verification.authorityChecks.length,
           evaluations_count: evaluations.length,
         },
       });

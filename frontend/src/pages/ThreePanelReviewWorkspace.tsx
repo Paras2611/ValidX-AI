@@ -41,6 +41,9 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
   const [showDecisionModal, setShowDecisionModal] = useState<'approve' | 'reject' | 'request_corrections' | null>(null);
   const [decisionReason, setDecisionReason] = useState<string>('');
   const [decisionNotes, setDecisionNotes] = useState<string>('');
+  const [requiresInspection, setRequiresInspection] = useState<boolean>(false);
+  const [inspectionCommittee, setInspectionCommittee] = useState<string>('EVC');
+  const [infraObservations, setInfraObservations] = useState<string>('');
   const [submittingDecision, setSubmittingDecision] = useState<boolean>(false);
 
   const [newComment, setNewComment] = useState<string>('');
@@ -113,15 +116,25 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
     setSubmittingDecision(true);
     try {
       if (showDecisionModal === 'approve') {
-        await api.reviews.approve(id, decisionReason, decisionNotes);
+        await api.reviews.approve(id, decisionReason, decisionNotes, {
+          requires_physical_inspection: requiresInspection,
+          inspection_committee_type: inspectionCommittee,
+          infrastructure_observations: infraObservations,
+        });
       } else if (showDecisionModal === 'reject') {
-        await api.reviews.reject(id, decisionReason, decisionNotes);
+        await api.reviews.reject(id, decisionReason, decisionNotes, {
+          requires_physical_inspection: requiresInspection,
+          inspection_committee_type: inspectionCommittee,
+          infrastructure_observations: infraObservations,
+        });
       } else if (showDecisionModal === 'request_corrections') {
         await api.reviews.requestCorrections(id, decisionReason, decisionNotes);
       }
       setShowDecisionModal(null);
       setDecisionReason('');
       setDecisionNotes('');
+      setRequiresInspection(false);
+      setInfraObservations('');
       fetchApplicationData();
     } catch (err: any) {
       alert(err.message || 'Failed to record decision');
@@ -155,6 +168,8 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
     documents,
     extracted_fields,
     verification_checks,
+    issuing_authority_checks = [],
+    document_anomalies = [],
     discrepancies,
     rule_evaluations,
     comments,
@@ -580,6 +595,81 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
             )}
           </div>
 
+          {/* Original Issuing Authorities Verification (Section 3.E) */}
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-indigo-600" />
+                <span>Issuing Authority Verification</span>
+              </h3>
+              <span className="text-[11px] font-semibold text-slate-500">
+                {issuing_authority_checks.length} Registered
+              </span>
+            </div>
+
+            {issuing_authority_checks.length === 0 ? (
+              <p className="text-xs text-slate-500 p-2.5 rounded-lg bg-slate-50 border border-slate-200">
+                No external issuing authority checks registered for this application.
+              </p>
+            ) : (
+              <div className="space-y-2">
+                {issuing_authority_checks.map((ac: any) => (
+                  <div
+                    key={ac.id}
+                    className="p-2.5 rounded-xl border border-slate-200 bg-white text-xs"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold text-slate-900 text-[11px]">{ac.authority_name}</span>
+                      <span
+                        className={`text-[9px] font-bold px-1.5 py-0.5 rounded uppercase ${
+                          ac.status === 'verified'
+                            ? 'bg-emerald-100 text-emerald-800'
+                            : ac.status === 'not_configured'
+                            ? 'bg-slate-100 text-slate-700'
+                            : ac.status === 'source_unavailable'
+                            ? 'bg-amber-100 text-amber-800'
+                            : 'bg-rose-100 text-rose-800'
+                        }`}
+                      >
+                        {ac.status.replace(/_/g, ' ')}
+                      </span>
+                    </div>
+                    <div className="text-[10px] text-slate-500 mt-1">
+                      Method: <span className="font-mono">{ac.verification_method}</span> &bull; Identifier:{' '}
+                      <span className="font-mono text-slate-700">{ac.input_identifier}</span>
+                    </div>
+                    {ac.notes && (
+                      <p className="text-[10px] text-slate-600 mt-1 italic">{ac.notes}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Anomaly & Forgery Detection (Section 3.D) */}
+          {document_anomalies.length > 0 && (
+            <div>
+              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-2 flex items-center gap-1.5 text-amber-700">
+                <AlertTriangle className="w-4 h-4 text-amber-600" />
+                <span>Potential Anomalies Flagged ({document_anomalies.length})</span>
+              </h3>
+              <div className="space-y-2">
+                {document_anomalies.map((an: any) => (
+                  <div key={an.id} className="p-2.5 rounded-xl border border-amber-200 bg-amber-50/50 text-xs">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="font-bold text-amber-900 text-[11px]">{an.category.replace(/_/g, ' ')}</span>
+                      <span className="text-[9px] bg-amber-200 text-amber-900 px-1.5 py-0.5 rounded font-semibold">
+                        {(an.confidence * 100).toFixed(0)}% Conf.
+                      </span>
+                    </div>
+                    <p className="text-[11px] text-slate-700 leading-snug">{an.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Statutory Compliance Rules Outcomes */}
           <div>
             <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-2">
@@ -755,6 +845,53 @@ export const ThreePanelReviewWorkspace: React.FC = () => {
                   placeholder="Notes for compliance & quality auditors..."
                   className="w-full p-2.5 rounded-lg border border-slate-300 text-xs focus:ring-1 focus:ring-indigo-500"
                 />
+              </div>
+
+              {/* AICTE Infrastructure & Physical Inspection Controls (Section 3.G) */}
+              <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2.5">
+                <label className="flex items-center gap-2 cursor-pointer text-xs font-bold text-slate-800">
+                  <input
+                    type="checkbox"
+                    checked={requiresInspection}
+                    onChange={(e) => setRequiresInspection(e.target.checked)}
+                    className="rounded text-indigo-600 w-4 h-4"
+                  />
+                  <span>Recommend On-Site Physical Inspection (EVC Committee Visit)</span>
+                </label>
+                <p className="text-[10px] text-slate-500 leading-tight">
+                  Mandatory safeguard: Computer-vision and document scans alone do not certify physical campus readiness. Flag potential gaps for authorized on-site physical inspection.
+                </p>
+
+                {requiresInspection && (
+                  <div className="pt-2 space-y-2 border-t border-slate-200">
+                    <div>
+                      <label className="block text-[11px] font-semibold text-slate-700 mb-0.5">
+                        Inspection Committee Type
+                      </label>
+                      <select
+                        value={inspectionCommittee}
+                        onChange={(e) => setInspectionCommittee(e.target.value)}
+                        className="w-full px-2.5 py-1.5 rounded-lg border border-slate-300 text-xs"
+                      >
+                        <option value="EVC">Expert Visit Committee (EVC - Comprehensive Inspection)</option>
+                        <option value="SAC">Standing Appeal Committee (SAC - Special Redressal)</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-[11px] font-semibold text-slate-700 mb-0.5">
+                        Infrastructure Observations / Physical Gaps Noted
+                      </label>
+                      <input
+                        type="text"
+                        value={infraObservations}
+                        onChange={(e) => setInfraObservations(e.target.value)}
+                        placeholder="e.g. Laboratory equipment verification & fire escape width check required"
+                        className="w-full px-2.5 py-1.5 rounded-lg border border-slate-300 text-xs"
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="flex justify-end gap-2 pt-3 border-t border-slate-100">
