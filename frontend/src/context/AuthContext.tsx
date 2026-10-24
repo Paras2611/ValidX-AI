@@ -6,10 +6,10 @@ interface AuthContextType {
   user: User | null;
   token: string | null;
   isLoading: boolean;
-  login: (email: string, password?: string) => Promise<void>;
-  register: (email: string, password: string, fullName: string) => Promise<void>;
+  login: (email: string, password?: string) => Promise<User>;
+  register: (email: string, password: string, fullName: string) => Promise<User>;
   logout: () => void;
-  switchRole: (role: UserRole) => Promise<void>;
+  switchRole: (role: UserRole) => Promise<User | undefined>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -45,25 +45,27 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     loadUser();
   }, [token]);
 
-  const login = async (email: string, password: string = 'Password@123') => {
+  const login = async (email: string, password: string = 'Password@123'): Promise<User> => {
     setIsLoading(true);
     try {
       const res = await api.auth.login({ email, password });
       localStorage.setItem('validx_token', res.token);
       setToken(res.token);
       setUser(res.user);
+      return res.user;
     } finally {
       setIsLoading(false);
     }
   };
 
-  const register = async (email: string, password: string, fullName: string) => {
+  const register = async (email: string, password: string, fullName: string): Promise<User> => {
     setIsLoading(true);
     try {
       const res = await api.auth.register({ email, password, full_name: fullName });
       localStorage.setItem('validx_token', res.token);
       setToken(res.token);
       setUser(res.user);
+      return res.user;
     } finally {
       setIsLoading(false);
     }
@@ -75,11 +77,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setUser(null);
   };
 
-  const switchRole = async (targetRole: UserRole) => {
+  const switchRole = async (targetRole: UserRole): Promise<User | undefined> => {
     const seed = SEED_USERS[targetRole];
     if (seed) {
-      await login(seed.email, seed.pass);
+      return await login(seed.email, seed.pass);
     }
+    return undefined;
   };
 
   return (

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { getAssignedRoute } from '../lib/roleNavigation';
 import { UserRole } from '../types';
 import {
   Cpu,
@@ -20,12 +21,16 @@ export const LandingPage: React.FC = () => {
   const { user, switchRole } = useAuth();
   const navigate = useNavigate();
 
+  // If already logged in, redirect straight to the assigned workspace
+  useEffect(() => {
+    if (user) {
+      navigate(getAssignedRoute(user.role), { replace: true });
+    }
+  }, [user, navigate]);
+
   const handleDemoLogin = async (role: UserRole) => {
     await switchRole(role);
-    if (role === 'applicant') navigate('/applicant');
-    else if (role === 'officer') navigate('/officer/queue');
-    else if (role === 'compliance') navigate('/compliance');
-    else navigate('/admin');
+    navigate(getAssignedRoute(role));
   };
 
   return (

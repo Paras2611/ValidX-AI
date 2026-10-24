@@ -1,4 +1,4 @@
-const API_BASE = '/api/v1';
+const API_BASE = (import.meta as any).env?.VITE_API_URL || '/api/v1';
 
 export class ApiError extends Error {
   status: number;
@@ -124,7 +124,10 @@ export const api = {
     },
     getDetails: (id: string) =>
       request<{ document: any; extracted_fields: any[] }>(`/documents/${id}`),
-    getContentUrl: (id: string) => `${API_BASE}/documents/${id}/content`,
+    getContentUrl: (id: string) => {
+      const token = localStorage.getItem('validx_token');
+      return `${API_BASE}/documents/${id}/content${token ? `?token=${encodeURIComponent(token)}` : ''}`;
+    },
   },
 
   reviews: {
@@ -214,7 +217,10 @@ export const api = {
       }),
     list: (applicationId: string) =>
       request<{ reports: any[] }>(`/reports/applications/${applicationId}`),
-    getDownloadUrl: (id: string) => `${API_BASE}/reports/${id}/download`,
+    getDownloadUrl: (id: string) => {
+      const token = localStorage.getItem('validx_token');
+      return `${API_BASE}/reports/${id}/download${token ? `?token=${encodeURIComponent(token)}` : ''}`;
+    },
   },
 
   notifications: {
@@ -241,5 +247,18 @@ export const api = {
       );
     },
     getSystemHealth: () => request<any>('/admin/system-health'),
+  },
+
+  system: {
+    getNetworkInfo: () =>
+      request<{
+        status: string;
+        serverIp: string;
+        backendPort: number;
+        frontendPort: number;
+        networkFrontendUrl: string;
+        networkBackendUrl: string;
+        apiEndpoint: string;
+      }>('/network-info'),
   },
 };

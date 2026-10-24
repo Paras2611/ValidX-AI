@@ -18,15 +18,21 @@ export interface AuthenticatedRequest extends Request {
 
 export function authenticate(req: AuthenticatedRequest, res: Response, next: NextFunction): void {
   const authHeader = req.headers.authorization;
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+  let token: string | undefined;
+
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    token = authHeader.substring(7);
+  } else if (typeof req.query.token === 'string' && req.query.token.trim()) {
+    token = req.query.token.trim();
+  }
+
+  if (!token) {
     res.status(401).json({
       error: 'Unauthorized',
       message: 'Authorization token is missing or malformed',
     });
     return;
   }
-
-  const token = authHeader.substring(7);
   try {
     const decoded = jwt.verify(token, config.jwtSecret) as {
       id: string;

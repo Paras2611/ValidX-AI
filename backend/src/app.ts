@@ -33,6 +33,8 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
+import { getLocalIpAddress } from './utils/network';
+
 // Health check endpoint
 app.get('/health', (req: Request, res: Response) => {
   res.json({
@@ -40,6 +42,20 @@ app.get('/health', (req: Request, res: Response) => {
     service: 'VALIDATEX Core API Engine',
     version: '1.0.0',
     timestamp: new Date().toISOString(),
+  });
+});
+
+// Network information endpoint for multi-device demo pairing
+app.get('/api/v1/network-info', (req: Request, res: Response) => {
+  const localIp = getLocalIpAddress();
+  res.json({
+    status: 'UP',
+    serverIp: localIp,
+    backendPort: 5000,
+    frontendPort: 5173,
+    networkFrontendUrl: `http://${localIp}:5173`,
+    networkBackendUrl: `http://${localIp}:5000`,
+    apiEndpoint: `http://${localIp}:5000/api/v1`,
   });
 });
 

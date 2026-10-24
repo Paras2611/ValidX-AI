@@ -9,12 +9,17 @@ if (db.count('users') === 0) {
   seedDatabase();
 }
 
-const server = app.listen(config.port, () => {
+import { getLocalIpAddress } from './utils/network';
+
+const localIp = getLocalIpAddress();
+
+const server = app.listen(config.port, '0.0.0.0', () => {
   console.log('========================================================');
-  console.log(`   VALIDATEX Backend API Server Running`);
+  console.log(`   VALIDATEX Backend API Server Running (Network Enabled)`);
   console.log(`   Port: ${config.port}`);
   console.log(`   Environment: ${config.env}`);
-  console.log(`   API Endpoint: http://localhost:${config.port}/api/v1`);
+  console.log(`   Local URL:    http://localhost:${config.port}/api/v1`);
+  console.log(`   Network URL:  http://${localIp}:${config.port}/api/v1`);
   console.log(`   Health Check: http://localhost:${config.port}/health`);
   console.log('========================================================');
 });

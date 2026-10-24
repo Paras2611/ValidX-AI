@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { api } from '../lib/api';
 import { Notification, UserRole } from '../types';
+import { getAssignedRoute } from '../lib/roleNavigation';
 import {
   Bell,
   LogOut,
@@ -212,7 +213,7 @@ export const Navbar: React.FC = () => {
         <div className="py-2.5 md:py-0 md:h-16 flex items-center justify-between gap-2 sm:gap-4">
           {/* Logo & Platform Tag with mobile Login/Switch trigger */}
           <div className="flex flex-col items-start justify-center">
-            <Link to="/" className="flex items-center gap-2 group">
+            <Link to={getAssignedRoute(user.role)} className="flex items-center gap-2 group">
               <div className="h-8 w-12 rounded-md overflow-hidden bg-white flex items-center justify-center shadow-xs p-0.5 border border-slate-200">
                 <img src="/ValidateXLogo.svg" alt="VALIDATEX Logo" className="h-full w-full object-contain" />
               </div>

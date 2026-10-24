@@ -138,13 +138,16 @@ All accounts are pre-seeded with the password: `Password@123`
      cd backend
      npm run dev
      ```
-     *Backend running at:* `http://localhost:5000` (API: `http://localhost:5000/api/v1`)
+     *Backend running at:* `http://localhost:5000` (LAN: `http://<your-lan-ip>:5000/api/v1`)
    - In terminal 2 (Frontend):
      ```bash
      cd frontend
      npm run dev
      ```
-     *Frontend running at:* `http://localhost:5173`
+     *Frontend running at:* `http://localhost:5173` (LAN: `http://<your-lan-ip>:5173`)
+
+   > [!TIP]
+   > **Multi-Device Live Demo:** Both backend and frontend automatically bind to all network interfaces (`0.0.0.0`). Open `http://<your-lan-ip>:5173` on mobile phones, tablets, or other laptops on the same Wi-Fi. You can also click the **"Connect Devices"** button in the navbar to display a live QR code for instant phone pairing!
 
 ---
 
